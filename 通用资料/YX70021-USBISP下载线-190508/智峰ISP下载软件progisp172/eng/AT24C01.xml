@@ -1,0 +1,18 @@
+<AVRPART>  
+  <ADMIN>
+    <PART_NAME>AT24C01</PART_NAME>  
+  </ADMIN>
+  <PROGRAMMING>
+    <PRGISP>  
+        <ZIF_NO>2</ZIF_NO>   
+    </PRGISP>
+    <PRGHV>
+        <ZIF_NO>5</ZIF_NO>   
+    </PRGHV>
+    <TYPE>4</TYPE> 
+    <SUBCLASS>0</SUBCLASS> 
+    <PROG_FLASH>128</PROG_FLASH>
+    <FlashPageSize>0</FlashPageSize>
+    <WD_Flash>9</WD_Flash>
+  </PROGRAMMING>
+</AVRPART>  

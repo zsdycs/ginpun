@@ -1,0 +1,22 @@
+Bill of Material for USBASP2.SCHDOC
+On 2010/6/22 at 22:08:20
+
+ Comment             Pattern     Quantity  Components
+------------------------------------------------------------------------------
+ 10K                 0805             1    R6                                                
+ 1K                  0805             3    R4, R5, R7                                        
+ 2K2                 0805             1    R3                                                
+ 3V6                 3V6              2    D1, D2                       Schottky Diode       
+ 500mA               Fuse             1    F1                                                
+ 68R                 0805             2    R1, R2                                            
+ AMS1117-3.3V        SOT223           1    U2                                                
+ ATMEGA8_TQFP32      TQFP-32          1    U1                           Atmel Microcontroller - Library created by carel..  <www.mpfreezone.com> 
+ Cap Pol1            1206             1    C1                           Polarized Capacitor (Radial) 
+ Cap                 0805             3    C3, C4, C5                   Capacitor            
+ GREEN               SMD _LED         1    DS1                          Typical BLUE SiC LED 
+ ISP                                  1    P1                           Header, 5-Pin, Dual row 
+ Jumper 2            HEAD2            2    JP2, JP3                                          
+ Jumper 3            HEAD3            1    JP1                                               
+ RED                 SMD _LED         1    DS2                          Typical BLUE SiC LED 
+ USB4                USB4             1    USB                                               
+ XTAL                XTAL200          1    Y1                           Crystal Oscillator   

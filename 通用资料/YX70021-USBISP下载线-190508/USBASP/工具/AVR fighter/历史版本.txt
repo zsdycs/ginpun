@@ -1,0 +1,18 @@
+AVR_fighter 所包括的历史版本列表:
+
+AVR_fighter 20080523   日期:20080523
+AVR_fighter 测试3.9+   日期:20080324
+AVR_fighter 测试3.9    日期:20080316
+AVR_fighter 测试3.8    日期:20080308
+AVR_fighter 测试3.7+   日期:20080306
+AVR_fighter 测试3.7    日期:20080305 (晚上)
+AVR_fighter 测试3.5    日期:20080305 (下午)
+AVR_fighter 测试3.4
+AVR_fighter 测试3.3
+AVR_fighter 测试3.2
+AVR_fighter 测试3.1
+AVR_fighter 测试3
+AVR_fighter 测试2
+AVR_fighter 测试1
+AVR_fighter 1.0s
+AVR_fighter 1.0        日期:20080212

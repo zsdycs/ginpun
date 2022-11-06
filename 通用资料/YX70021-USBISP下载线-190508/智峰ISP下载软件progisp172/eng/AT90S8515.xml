@@ -1,0 +1,108 @@
+<AVRPART>
+  <ADMIN>
+    <PART_NAME>AT90S8515</PART_NAME>
+    <SPEED>16MHZ</SPEED>
+    <SIGNATURE>
+      <ADDR000>0x1E</ADDR000>
+      <ADDR001>0x93</ADDR001>
+      <ADDR002>0x01</ADDR002>
+    </SIGNATURE>  
+  </ADMIN>
+  <PROGRAMMING>
+    <ISPInterface>
+      <NoFuseProg/>
+      <NoFuseLockRead/>
+      <LockReadMask>0x00</LockReadMask>
+      <FuseReadMask>0x00</FuseReadMask>
+      <FuseProgMask>0x00</FuseProgMask>
+      <FuseWarning>0,0x20,0x20,WARNING! These fuse settings will disable the ISP interface!</FuseWarning>
+    </ISPInterface>
+    <HVInterface>
+      <FuseWarning>0,0x20,0x20,WARNING! These fuse settings will disable the ISP interface!</FuseWarning>
+    </HVInterface>
+    <OscCal>
+		</OscCal>  
+    <PRGISP>  
+        <ZIF_NO>2</ZIF_NO>   
+    </PRGISP>
+    <PRGHV>
+        <ZIF_NO>5</ZIF_NO>   
+    </PRGHV>
+    <TYPE>1</TYPE> 
+    <SUBCLASS>4</SUBCLASS> 
+    <PROG_FLASH>8192</PROG_FLASH>
+    <EEPROM>512</EEPROM>    
+    <FlashPageSize>0</FlashPageSize>
+    <EepromPageSize>0</EepromPageSize>
+    <WD_Flash>9</WD_Flash>
+    <WD_EEPROM>15</WD_EEPROM>
+    <WD_ERASE>50</WD_ERASE>
+    <WD_FUSE>9</WD_FUSE>
+    <WD_LOCK>9</WD_LOCK>
+    <WD_RESET>100</WD_RESET> 
+    <FuseRCMD0>0x58000000</FuseRCMD0>    
+    <FuseRPos>3</FuseRPos>    
+    <FuseWCMD0>0xac000000</FuseWCMD0>    
+    <FuseWPos>3</FuseWPos>    
+    <LockRCMD>0x58000000</LockRCMD>    
+    <LockRPos>3</LockRPos>    
+    <LockWCMD>0xac000000</LockWCMD>    
+    <LockWPos>1</LockWPos>  
+    <fusevalue>0xDF</fusevalue>  
+    <FuseMask>0xDF</FuseMask> 
+  </PROGRAMMING>
+	<LOCKBIT>
+		<TEXT>[LB1 = 1 :  LB2 = 1] No memory lock features enabled. [LB1 = 0 :  LB2 = 1] Further programming of Flash and EEPROM is enabled. [LB1 = 0 :  LB2 = 0] Same as previous, but verify is also disabled</TEXT>
+		<NMB_TEXT>3</NMB_TEXT>
+		<NMB_LOCK_BITS>2</NMB_LOCK_BITS>
+		<TEXT1>
+			<MASK>0x06</MASK>
+			<VALUE>0x06</VALUE>
+			<TEXT>Mode 1: No memory lock features enabled</TEXT>
+		</TEXT1>
+		<TEXT2>
+			<MASK>0x06</MASK>
+			<VALUE>0x04</VALUE>
+			<TEXT>Mode 2: Further programming disabled</TEXT>
+		</TEXT2>
+		<TEXT3>
+			<MASK>0x06</MASK>
+			<VALUE>0x00</VALUE>
+			<TEXT>Mode 3: Further programming and verification disabled</TEXT>
+		</TEXT3>
+		<LOCKBIT1>
+			<NAME>LB1</NAME>
+			<TEXT>Lockbit</TEXT>
+		</LOCKBIT1>
+		<LOCKBIT2>
+			<NAME>LB2</NAME>
+			<TEXT>Lockbit</TEXT>
+		</LOCKBIT2>
+	</LOCKBIT>
+	<FUSE>
+		<LOW>
+			<NMB_FUSE_BITS>2</NMB_FUSE_BITS>
+			<FUSE5>
+				<NAME>SPIEN</NAME>
+				<TEXT>Serial Program Downloading Enabled</TEXT>
+        <DEFAULT>1</DEFAULT>
+			</FUSE5>
+			<FUSE0>
+				<NAME>FSTRT</NAME>
+				<TEXT>Short Start-up time selected</TEXT>
+        <DEFAULT>0</DEFAULT>
+			</FUSE0>
+			<NMB_TEXT>2</NMB_TEXT>
+			<TEXT1>
+				<MASK>0x20</MASK>
+				<VALUE>0x00</VALUE>
+				<TEXT>Serial program downloading (SPI) enabled</TEXT>
+			</TEXT1>
+			<TEXT2>
+				<MASK>0x01</MASK>
+				<VALUE>0x00</VALUE>
+				<TEXT>Short start-up time selected</TEXT>
+			</TEXT2>
+		</LOW>
+	</FUSE>
+</AVRPART>

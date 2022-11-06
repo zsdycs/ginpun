@@ -1,0 +1,77 @@
+<AVRPART>
+  <ADMIN>
+    <PART_NAME>AT86RF401</PART_NAME>
+    <SPEED>16MHZ</SPEED>
+    <SIGNATURE>
+      <ADDR000>0x1E</ADDR000>
+      <ADDR001>0x91</ADDR001>
+      <ADDR002>0x81</ADDR002>
+    </SIGNATURE>  
+  </ADMIN>
+  <PROGRAMMING>
+    <PRGISP>  
+        <ZIF_NO>2</ZIF_NO>   
+    </PRGISP>
+    <PRGHV>
+        <ZIF_NO>5</ZIF_NO>   
+    </PRGHV>
+    <TYPE>0</TYPE> 
+    <SUBCLASS>0</SUBCLASS> 
+    <OscCal>
+      <OCEntry0>1.0MHz</OCEntry0>
+      <OCEntry1>2.0MHz</OCEntry1>
+      <OCEntry2>4.0MHz</OCEntry2>
+      <OCEntry3>8.0MHz</OCEntry3>
+    </OscCal>
+    <PROG_FLASH>2048</PROG_FLASH>
+    <EEPROM>128</EEPROM>    
+    <FlashPageSize>0</FlashPageSize>
+    <EepromPageSize>0</EepromPageSize>
+    <WD_Flash>9</WD_Flash>
+    <WD_EEPROM>15</WD_EEPROM>
+    <WD_ERASE>50</WD_ERASE>
+    <WD_FUSE>9</WD_FUSE>
+    <WD_LOCK>9</WD_LOCK>
+    <WD_RESET>100</WD_RESET>  
+    <LockRCMD>0x58000000</LockRCMD>    
+    <LockRPos>3</LockRPos>    
+    <LockWCMD>0xac000000</LockWCMD>    
+    <LockWPos>1</LockWPos>       
+  </PROGRAMMING>
+	<FUSE>
+		<LIST>[LOW]</LIST>
+		<ICON/>
+		<ID/>
+		<TEXT/>
+	</FUSE>
+	<LOCKBIT>
+		<ICON/>
+		<ID/>
+		<TEXT>[LB1 = 1 :  LB2 = 1] No memory lock features enabled. [LB1 = 0 :  LB2 = 1] Further programming of Flash and EEPROM is enabled. [LB1 = 0 :  LB2 = 0] Same as previous, but verify is also disabled</TEXT>
+		<NMB_TEXT>3</NMB_TEXT>
+		<NMB_LOCK_BITS>2</NMB_LOCK_BITS>
+		<TEXT1>
+			<MASK>0x06</MASK>
+			<VALUE>0x06</VALUE>
+			<TEXT>Mode 1: No memory lock features enabled</TEXT>
+		</TEXT1>
+		<TEXT2>
+			<MASK>0x06</MASK>
+			<VALUE>0x04</VALUE>
+			<TEXT>Mode 2: Further programming disabled</TEXT>
+		</TEXT2>
+		<TEXT3>
+			<MASK>0x06</MASK>
+			<VALUE>0x00</VALUE>
+			<TEXT>Mode 3: Further programming and verification disabled</TEXT>
+		</TEXT3>
+		<LOCKBIT1>
+			<NAME>LB1</NAME>
+			<TEXT>Lockbit</TEXT>
+		</LOCKBIT1>
+		<LOCKBIT2>
+			<NAME>LB2</NAME>
+			<TEXT>Lockbit</TEXT>
+		</LOCKBIT2>
+	</LOCKBIT>
+</AVRPART>

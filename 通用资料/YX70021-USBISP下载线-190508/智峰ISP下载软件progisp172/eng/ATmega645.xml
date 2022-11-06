@@ -1,0 +1,563 @@
+<AVRPART>
+  <ADMIN>
+    <PART_NAME>ATmega645</PART_NAME>
+    <SPEED>16MHZ</SPEED>
+    <SIGNATURE>
+      <ADDR000>0x1E</ADDR000>
+      <ADDR001>0x96</ADDR001>
+      <ADDR002>0x05</ADDR002>
+    </SIGNATURE> 
+  </ADMIN>
+  <PROGRAMMING>
+    <ISPInterface>
+      <FuseReadMask>0xff,0xdf</FuseReadMask>
+      <FuseProgMask>0xff,0xdf</FuseProgMask>
+      <FuseWarning>1,0x40,0x40,WARNING! These fuse settings will disable the JTAG interface!</FuseWarning>
+      <FuseWarning>1,0x20,0x20,WARNING! These fuse settings will disable the ISP interface!</FuseWarning>
+      <FuseWarning>2,0x01,0x00,WARNING! Disabling external reset will make the ISP interface inaccessible!</FuseWarning>
+    </ISPInterface>
+    <HVInterface>
+      <FuseWarning>1,0x40,0x40,WARNING! These fuse settings will disable the JTAG interface!</FuseWarning>
+      <FuseWarning>1,0x20,0x20,WARNING! These fuse settings will disable the ISP interface!</FuseWarning>
+      <FuseWarning>2,0x01,0x00,WARNING! Disabling external reset will make the ISP interface inaccessible!</FuseWarning>
+    </HVInterface>
+    <JTAGInterface>
+      <FuseWarning>1,0x40,0x40,WARNING! These fuse settings will disable the JTAG interface!</FuseWarning>
+      <FuseWarning>1,0x20,0x20,WARNING! These fuse settings will disable the ISP interface!</FuseWarning>
+      <FuseWarning>2,0x01,0x00,WARNING! Disabling external reset will make the ISP interface inaccessible!</FuseWarning>
+    </JTAGInterface>  
+    <PRGISP>  
+        <ZIF_NO>2</ZIF_NO>   
+    </PRGISP>
+    <PRGHV>
+        <ZIF_NO>5</ZIF_NO>   
+    </PRGHV>
+    <TYPE>1</TYPE> 
+    <SUBCLASS>4</SUBCLASS> 
+    <OscCal>
+      <OCEntry>0x00,8.0 MHz</OCEntry>
+    </OscCal>
+    <PROG_FLASH>65536</PROG_FLASH>
+    <EEPROM>2048</EEPROM>    
+    <FlashPageSize>256</FlashPageSize>
+    <EepromPageSize>8</EepromPageSize>
+    <WD_Flash>9</WD_Flash>
+    <WD_EEPROM>15</WD_EEPROM>
+    <WD_ERASE>50</WD_ERASE>
+    <WD_FUSE>9</WD_FUSE>
+    <WD_LOCK>9</WD_LOCK>
+    <WD_RESET>100</WD_RESET> 
+    <FuseRCMD0>0x50000000</FuseRCMD0>    
+    <FuseRCMD1>0x58080000</FuseRCMD1>    
+    <FuseRCMD2>0x50080000</FuseRCMD2>    
+    <FuseRPos>3</FuseRPos>    
+    <FuseWCMD0>0xaca00000</FuseWCMD0>    
+    <FuseWCMD1>0xaca80000</FuseWCMD1>    
+    <FuseWCMD2>0xaca40000</FuseWCMD2>    
+    <FuseWPos>3</FuseWPos>    
+    <LockRCMD>0x58000000</LockRCMD>    
+    <LockRPos>3</LockRPos>    
+    <LockWCMD>0xace00000</LockWCMD>    
+    <LockWPos>3</LockWPos>  
+    <fusevalue>0xff9962</fusevalue>  
+    <FuseMask>0xffdfff</FuseMask>        
+  </PROGRAMMING>
+    <LOCKBIT>
+		<TEXT>[LB1 = 1 :  LB2 = 1] No memory lock features enabled. [LB1 = 0 :  LB2 = 1] Further programming of Flash and EEPROM is enabled. [LB1 = 0 :  LB2 = 0] Same as previous, but verify is also disabled</TEXT>
+		<NMB_LOCK_BITS>6</NMB_LOCK_BITS>
+		<NMB_TEXT>11</NMB_TEXT>
+		<TEXT1>
+			<MASK>0x03</MASK>
+			<VALUE>0x03</VALUE>
+			<TEXT>Mode 1: No memory lock features enabled</TEXT>
+		</TEXT1>
+		<TEXT2>
+			<MASK>0x03</MASK>
+			<VALUE>0x02</VALUE>
+			<TEXT>Mode 2: Further programming disabled</TEXT>
+		</TEXT2>
+		<TEXT3>
+			<MASK>0x03</MASK>
+			<VALUE>0x00</VALUE>
+			<TEXT>Mode 3: Further programming and verification disabled</TEXT>
+		</TEXT3>
+		<TEXT4>
+			<MASK>0x0C</MASK>
+			<VALUE>0x0C</VALUE>
+			<TEXT>Application Protection Mode 1: No lock on SPM and LPM in Application Section</TEXT>
+		</TEXT4>
+		<TEXT5>
+			<MASK>0x0C</MASK>
+			<VALUE>0x08</VALUE>
+			<TEXT>Application Protection Mode 2: SPM prohibited in Application Section</TEXT>
+		</TEXT5>
+		<TEXT6>
+			<MASK>0x0C</MASK>
+			<VALUE>0x00</VALUE>
+			<TEXT>Application Protection Mode 3: LPM and SPM prohibited in Application Section</TEXT>
+		</TEXT6>
+		<TEXT7>
+			<MASK>0x0C</MASK>
+			<VALUE>0x04</VALUE>
+			<TEXT>Application Protection Mode 4: LPM prohibited in Application Section</TEXT>
+		</TEXT7>
+		<TEXT8>
+			<MASK>0x30</MASK>
+			<VALUE>0x30</VALUE>
+			<TEXT>Boot Loader Protection Mode 1: No lock on SPM and LPM in Boot Loader Section</TEXT>
+		</TEXT8>
+		<TEXT9>
+			<MASK>0x30</MASK>
+			<VALUE>0x20</VALUE>
+			<TEXT>Boot Loader Protection Mode 2: SPM prohibited in Boot Loader Section</TEXT>
+		</TEXT9>
+		<TEXT10>
+			<MASK>0x30</MASK>
+			<VALUE>0x00</VALUE>
+			<TEXT>Boot Loader Protection Mode 3: LPM and SPM prohibited in Boot Loader Section</TEXT>
+		</TEXT10>
+		<TEXT11>
+			<MASK>0x30</MASK>
+			<VALUE>0x10</VALUE>
+			<TEXT>Boot Loader Protection Mode 4: LPM prohibited in Boot Loader Section</TEXT>
+		</TEXT11>
+		<LOCKBIT0>
+			<NAME>LB1</NAME>
+			<TEXT>Lock bit</TEXT>
+		</LOCKBIT0>
+		<LOCKBIT1>
+			<NAME>LB2</NAME>
+			<TEXT>Lock bit</TEXT>
+		</LOCKBIT1>
+		<LOCKBIT2>
+			<NAME>BLB01</NAME>
+			<TEXT>Boot Lock bit</TEXT>
+		</LOCKBIT2>
+		<LOCKBIT3>
+			<NAME>BLB02</NAME>
+			<TEXT>Boot Lock bit</TEXT>
+		</LOCKBIT3>
+		<LOCKBIT4>
+			<NAME>BLB11</NAME>
+			<TEXT>Boot lock bit</TEXT>
+		</LOCKBIT4>
+		<LOCKBIT5>
+			<NAME>BLB12</NAME>
+			<TEXT>Boot lock bit</TEXT>
+		</LOCKBIT5>
+	</LOCKBIT>
+	<FUSE>
+		<LOW>
+			<NMB_FUSE_BITS>8</NMB_FUSE_BITS>
+			<FUSE7>
+				<NAME>CLKDIV8</NAME>
+				<TEXT>Divide clock by 8</TEXT>
+				<DEFAULT>0</DEFAULT>
+			</FUSE7>
+			<FUSE6>
+				<NAME>CKOUT</NAME>
+				<TEXT>Oscillator options</TEXT>
+				<DEFAULT>1</DEFAULT>
+			</FUSE6>
+			<FUSE5>
+				<NAME>SUT1</NAME>
+				<TEXT>Select start-up time</TEXT>
+				<DEFAULT>1</DEFAULT>
+			</FUSE5>
+			<FUSE4>
+				<NAME>SUT0</NAME>
+				<TEXT>Select start-up time</TEXT>
+				<DEFAULT>0</DEFAULT>
+			</FUSE4>
+			<FUSE3>
+				<NAME>CKSEL3</NAME>
+				<TEXT>Select Clock Source</TEXT>
+				<DEFAULT>0</DEFAULT>
+			</FUSE3>
+			<FUSE2>
+				<NAME>CKSEL2</NAME>
+				<TEXT>Select Clock Source</TEXT>
+				<DEFAULT>0</DEFAULT>
+			</FUSE2>
+			<FUSE1>
+				<NAME>CKSEL1</NAME>
+				<TEXT>Select Clock Source</TEXT>
+				<DEFAULT>1</DEFAULT>
+			</FUSE1>
+			<FUSE0>
+				<NAME>CKSEL0</NAME>
+				<TEXT>Select Clock Source</TEXT>
+				<DEFAULT>0</DEFAULT>
+			</FUSE0>
+			<NMB_TEXT>46</NMB_TEXT>
+			<TEXT1>
+				<MASK>0x80</MASK>
+				<VALUE>0x00</VALUE>
+				<TEXT>Divide clock by 8 internally; [CKDIV8=0]</TEXT>
+			</TEXT1>
+			<TEXT2>
+				<MASK>0x40</MASK>
+				<VALUE>0x00</VALUE>
+				<TEXT>Clock output on PORTE7; [CKOUT=0]</TEXT>
+			</TEXT2>
+			<TEXT3>
+				<MASK>0x3F</MASK>
+				<VALUE>0x00</VALUE>
+				<TEXT>Ext. Clock; Start-up time: 6 CK + 0 ms; [CKSEL=0000 SUT=00]</TEXT>
+			</TEXT3>
+			<TEXT4>
+				<MASK>0x3F</MASK>
+				<VALUE>0x10</VALUE>
+				<TEXT>Ext. Clock; Start-up time: 6 CK + 4.1 ms; [CKSEL=0000 SUT=01]</TEXT>
+			</TEXT4>
+			<TEXT5>
+				<MASK>0x3F</MASK>
+				<VALUE>0x20</VALUE>
+				<TEXT>Ext. Clock; Start-up time: 6 CK + 65 ms; [CKSEL=0000 SUT=10]</TEXT>
+			</TEXT5>
+			<TEXT6>
+				<MASK>0x3F</MASK>
+				<VALUE>0x02</VALUE>
+				<TEXT>Int. RC Osc.; Start-up time: 6 CK + 0 ms; [CKSEL=0010 SUT=00]</TEXT>
+			</TEXT6>
+			<TEXT7>
+				<MASK>0x3F</MASK>
+				<VALUE>0x12</VALUE>
+				<TEXT>Int. RC Osc.; Start-up time: 6 CK + 4.1 ms; [CKSEL=0010 SUT=01]</TEXT>
+			</TEXT7>
+			<TEXT8>
+				<MASK>0x3F</MASK>
+				<VALUE>0x22</VALUE>
+				<TEXT>Int. RC Osc.; Start-up time: 6 CK + 65 ms; [CKSEL=0010 SUT=10]</TEXT>
+			</TEXT8>
+			<TEXT9>
+				<MASK>0x3F</MASK>
+				<VALUE>0x07</VALUE>
+				<TEXT>Ext. Low-Freq. Crystal; Start-up time: 32K CK + 0 ms; [CKSEL=0111 SUT=00]</TEXT>
+			</TEXT9>
+			<TEXT10>
+				<MASK>0x3F</MASK>
+				<VALUE>0x17</VALUE>
+				<TEXT>Ext. Low-Freq. Crystal; Start-up time: 32K CK + 4.1 ms; [CKSEL=0111 SUT=01]</TEXT>
+			</TEXT10>
+			<TEXT11>
+				<MASK>0x3F</MASK>
+				<VALUE>0x27</VALUE>
+				<TEXT>Ext. Low-Freq. Crystal; Start-up time: 32K CK + 65 ms; [CKSEL=0111 SUT=10]</TEXT>
+			</TEXT11>
+			<TEXT12>
+				<MASK>0x3F</MASK>
+				<VALUE>0x06</VALUE>
+				<TEXT>Ext. Low-Freq. Crystal; Start-up time: 1K CK + 0 ms; [CKSEL=0110 SUT=00]</TEXT>
+			</TEXT12>
+			<TEXT13>
+				<MASK>0x3F</MASK>
+				<VALUE>0x16</VALUE>
+				<TEXT>Ext. Low-Freq. Crystal; Start-up time: 1K CK + 4.1 ms; [CKSEL=0110 SUT=01]</TEXT>
+			</TEXT13>
+			<TEXT14>
+				<MASK>0x3F</MASK>
+				<VALUE>0x26</VALUE>
+				<TEXT>Ext. Low-Freq. Crystal; Start-up time: 1K CK + 65 ms; [CKSEL=0110 SUT=10]</TEXT>
+			</TEXT14>
+			<TEXT15>
+				<MASK>0x3F</MASK>
+				<VALUE>0x08</VALUE>
+				<TEXT>Ext. Crystal Osc.; Frequency 0.4-0.9 MHz; Start-up time: 258 CK + 4.1 ms; [CKSEL=1000 SUT=00]</TEXT>
+			</TEXT15>
+			<TEXT16>
+				<MASK>0x3F</MASK>
+				<VALUE>0x18</VALUE>
+				<TEXT>Ext. Crystal Osc.; Frequency 0.4-0.9 MHz; Start-up time: 258 CK + 65 ms; [CKSEL=1000 SUT=01]</TEXT>
+			</TEXT16>
+			<TEXT17>
+				<MASK>0x3F</MASK>
+				<VALUE>0x28</VALUE>
+				<TEXT>Ext. Crystal Osc.; Frequency 0.4-0.9 MHz; Start-up time: 1K CK + 0 ms; [CKSEL=1000 SUT=10]</TEXT>
+			</TEXT17>
+			<TEXT18>
+				<MASK>0x3F</MASK>
+				<VALUE>0x38</VALUE>
+				<TEXT>Ext. Crystal Osc.; Frequency 0.4-0.9 MHz; Start-up time: 1K CK + 4.1 ms; [CKSEL=1000 SUT=11]</TEXT>
+			</TEXT18>
+			<TEXT19>
+				<MASK>0x3F</MASK>
+				<VALUE>0x09</VALUE>
+				<TEXT>Ext. Crystal Osc.; Frequency 0.4-0.9 MHz; Start-up time: 1K CK + 65 ms; [CKSEL=1001 SUT=00]</TEXT>
+			</TEXT19>
+			<TEXT20>
+				<MASK>0x3F</MASK>
+				<VALUE>0x19</VALUE>
+				<TEXT>Ext. Crystal Osc.; Frequency 0.4-0.9 MHz; Start-up time: 16K CK + 0 ms; [CKSEL=1001 SUT=01]</TEXT>
+			</TEXT20>
+			<TEXT21>
+				<MASK>0x3F</MASK>
+				<VALUE>0x29</VALUE>
+				<TEXT>Ext. Crystal Osc.; Frequency 0.4-0.9 MHz; Start-up time: 16K CK + 4.1 ms; [CKSEL=1001 SUT=10]</TEXT>
+			</TEXT21>
+			<TEXT22>
+				<MASK>0x3F</MASK>
+				<VALUE>0x39</VALUE>
+				<TEXT>Ext. Crystal Osc.; Frequency 0.4-0.9 MHz; Start-up time: 16K CK + 65 ms; [CKSEL=1001 SUT=11]</TEXT>
+			</TEXT22>
+			<TEXT23>
+				<MASK>0x3F</MASK>
+				<VALUE>0x0A</VALUE>
+				<TEXT>Ext. Crystal Osc.; Frequency 0.9-3.0 MHz; Start-up time: 258 CK + 4.1 ms; [CKSEL=1010 SUT=00]</TEXT>
+			</TEXT23>
+			<TEXT24>
+				<MASK>0x3F</MASK>
+				<VALUE>0x1A</VALUE>
+				<TEXT>Ext. Crystal Osc.; Frequency 0.9-3.0 MHz; Start-up time: 258 CK + 65 ms; [CKSEL=1010 SUT=01]</TEXT>
+			</TEXT24>
+			<TEXT25>
+				<MASK>0x3F</MASK>
+				<VALUE>0x2A</VALUE>
+				<TEXT>Ext. Crystal Osc.; Frequency 0.9-3.0 MHz; Start-up time: 1K CK + 0 ms; [CKSEL=1010 SUT=10]</TEXT>
+			</TEXT25>
+			<TEXT26>
+				<MASK>0x3F</MASK>
+				<VALUE>0x3A</VALUE>
+				<TEXT>Ext. Crystal Osc.; Frequency 0.9-3.0 MHz; Start-up time: 1K CK + 4.1 ms; [CKSEL=1010 SUT=11]</TEXT>
+			</TEXT26>
+			<TEXT27>
+				<MASK>0x3F</MASK>
+				<VALUE>0x0B</VALUE>
+				<TEXT>Ext. Crystal Osc.; Frequency 0.9-3.0 MHz; Start-up time: 1K CK + 65 ms; [CKSEL=1011 SUT=00]</TEXT>
+			</TEXT27>
+			<TEXT28>
+				<MASK>0x3F</MASK>
+				<VALUE>0x1B</VALUE>
+				<TEXT>Ext. Crystal Osc.; Frequency 0.9-3.0 MHz; Start-up time: 16K CK + 0 ms; [CKSEL=1011 SUT=01]</TEXT>
+			</TEXT28>
+			<TEXT29>
+				<MASK>0x3F</MASK>
+				<VALUE>0x2B</VALUE>
+				<TEXT>Ext. Crystal Osc.; Frequency 0.9-3.0 MHz; Start-up time: 16K CK + 4.1 ms; [CKSEL=1011 SUT=10]</TEXT>
+			</TEXT29>
+			<TEXT30>
+				<MASK>0x3F</MASK>
+				<VALUE>0x3B</VALUE>
+				<TEXT>Ext. Crystal Osc.; Frequency 0.9-3.0 MHz; Start-up time: 16K CK + 65 ms; [CKSEL=1011 SUT=11]</TEXT>
+			</TEXT30>
+			<TEXT31>
+				<MASK>0x3F</MASK>
+				<VALUE>0x0C</VALUE>
+				<TEXT>Ext. Crystal Osc.; Frequency 3.0-8.0 MHz; Start-up time: 258 CK + 4.1 ms; [CKSEL=1100 SUT=00]</TEXT>
+			</TEXT31>
+			<TEXT32>
+				<MASK>0x3F</MASK>
+				<VALUE>0x1C</VALUE>
+				<TEXT>Ext. Crystal Osc.; Frequency 3.0-8.0 MHz; Start-up time: 258 CK + 65 ms; [CKSEL=1100 SUT=01]</TEXT>
+			</TEXT32>
+			<TEXT33>
+				<MASK>0x3F</MASK>
+				<VALUE>0x2C</VALUE>
+				<TEXT>Ext. Crystal Osc.; Frequency 3.0-8.0 MHz; Start-up time: 1K CK + 0 ms; [CKSEL=1100 SUT=10]</TEXT>
+			</TEXT33>
+			<TEXT34>
+				<MASK>0x3F</MASK>
+				<VALUE>0x3C</VALUE>
+				<TEXT>Ext. Crystal Osc.; Frequency 3.0-8.0 MHz; Start-up time: 1K CK + 4.1 ms; [CKSEL=1100 SUT=11]</TEXT>
+			</TEXT34>
+			<TEXT35>
+				<MASK>0x3F</MASK>
+				<VALUE>0x0D</VALUE>
+				<TEXT>Ext. Crystal Osc.; Frequency 3.0-8.0 MHz; Start-up time: 1K CK + 65 ms; [CKSEL=1101 SUT=00]</TEXT>
+			</TEXT35>
+			<TEXT36>
+				<MASK>0x3F</MASK>
+				<VALUE>0x1D</VALUE>
+				<TEXT>Ext. Crystal Osc.; Frequency 3.0-8.0 MHz; Start-up time: 16K CK + 0 ms; [CKSEL=1101 SUT=01]</TEXT>
+			</TEXT36>
+			<TEXT37>
+				<MASK>0x3F</MASK>
+				<VALUE>0x2D</VALUE>
+				<TEXT>Ext. Crystal Osc.; Frequency 3.0-8.0 MHz; Start-up time: 16K CK + 4.1 ms; [CKSEL=1101 SUT=10]</TEXT>
+			</TEXT37>
+			<TEXT38>
+				<MASK>0x3F</MASK>
+				<VALUE>0x3D</VALUE>
+				<TEXT>Ext. Crystal Osc.; Frequency 3.0-8.0 MHz; Start-up time: 16K CK + 65 ms; [CKSEL=1101 SUT=11]</TEXT>
+			</TEXT38>
+			<TEXT39>
+				<MASK>0x3F</MASK>
+				<VALUE>0x0E</VALUE>
+				<TEXT>Ext. Crystal Osc.; Frequency 8.0-    MHz; Start-up time: 258 CK + 4.1 ms; [CKSEL=1110 SUT=00]</TEXT>
+			</TEXT39>
+			<TEXT40>
+				<MASK>0x3F</MASK>
+				<VALUE>0x1E</VALUE>
+				<TEXT>Ext. Crystal Osc.; Frequency 8.0-    MHz; Start-up time: 258 CK + 65 ms; [CKSEL=1110 SUT=01]</TEXT>
+			</TEXT40>
+			<TEXT41>
+				<MASK>0x3F</MASK>
+				<VALUE>0x2E</VALUE>
+				<TEXT>Ext. Crystal Osc.; Frequency 8.0-    MHz; Start-up time: 1K CK + 0 ms; [CKSEL=1110 SUT=10]</TEXT>
+			</TEXT41>
+			<TEXT42>
+				<MASK>0x3F</MASK>
+				<VALUE>0x3E</VALUE>
+				<TEXT>Ext. Crystal Osc.; Frequency 8.0-    MHz; Start-up time: 1K CK + 4.1 ms; [CKSEL=1110 SUT=11]</TEXT>
+			</TEXT42>
+			<TEXT43>
+				<MASK>0x3F</MASK>
+				<VALUE>0x0F</VALUE>
+				<TEXT>Ext. Crystal Osc.; Frequency 8.0-    MHz; Start-up time: 1K CK + 65 ms; [CKSEL=1111 SUT=00]</TEXT>
+			</TEXT43>
+			<TEXT44>
+				<MASK>0x3F</MASK>
+				<VALUE>0x1F</VALUE>
+				<TEXT>Ext. Crystal Osc.; Frequency 8.0-    MHz; Start-up time: 16K CK + 0 ms; [CKSEL=1111 SUT=01]</TEXT>
+			</TEXT44>
+			<TEXT45>
+				<MASK>0x3F</MASK>
+				<VALUE>0x2F</VALUE>
+				<TEXT>Ext. Crystal Osc.; Frequency 8.0-    MHz; Start-up time: 16K CK + 4.1 ms; [CKSEL=1111 SUT=10]</TEXT>
+			</TEXT45>
+			<TEXT46>
+				<MASK>0x3F</MASK>
+				<VALUE>0x3F</VALUE>
+				<TEXT>Ext. Crystal Osc.; Frequency 8.0-    MHz; Start-up time: 16K CK + 65 ms; [CKSEL=1111 SUT=11]</TEXT>
+			</TEXT46>
+		</LOW>
+		<HIGH>
+			<NMB_FUSE_BITS>8</NMB_FUSE_BITS>
+			<FUSE7>
+				<NAME>OCDEN</NAME>
+				<TEXT>Enable OCD</TEXT>
+				<DEFAULT>1</DEFAULT>
+			</FUSE7>
+			<FUSE6>
+				<NAME>JTAGEN</NAME>
+				<TEXT>Enable JTAG</TEXT>
+				<DEFAULT>0</DEFAULT>
+			</FUSE6>
+			<FUSE5>
+				<NAME>SPIEN</NAME>
+				<TEXT>Enable Serial programming and Data Downloading</TEXT>
+				<DEFAULT>0</DEFAULT>
+			</FUSE5>
+			<FUSE4>
+				<NAME>WDTON</NAME>
+				<TEXT>Watchdog timer always on</TEXT>
+				<DEFAULT>1</DEFAULT>
+			</FUSE4>
+			<FUSE3>
+				<NAME>EESAVE</NAME>
+				<TEXT>EEPROM memory is preserved through chip erase</TEXT>
+				<DEFAULT>1</DEFAULT>
+			</FUSE3>
+			<FUSE2>
+				<NAME>BOOTSZ1</NAME>
+				<TEXT>Select Boot Size</TEXT>
+				<DEFAULT>0</DEFAULT>
+			</FUSE2>
+			<FUSE1>
+				<NAME>BOOTSZ0</NAME>
+				<TEXT>Select Boot Size</TEXT>
+				<DEFAULT>0</DEFAULT>
+			</FUSE1>
+			<FUSE0>
+				<NAME>BOOTRST</NAME>
+				<TEXT>Select Reset Vector</TEXT>
+				<DEFAULT>1</DEFAULT>
+			</FUSE0>
+			<NMB_TEXT>10</NMB_TEXT>
+			<TEXT1>
+				<MASK>0x80</MASK>
+				<VALUE>0x00</VALUE>
+				<TEXT>On-Chip Debug Enabled; [OCDEN=0]</TEXT>
+			</TEXT1>
+			<TEXT2>
+				<MASK>0x40</MASK>
+				<VALUE>0x00</VALUE>
+				<TEXT>JTAG Interface Enabled; [JTAGEN=0]</TEXT>
+			</TEXT2>
+			<TEXT3>
+				<MASK>0x20</MASK>
+				<VALUE>0x00</VALUE>
+				<TEXT>Serial program downloading (SPI) enabled; [SPIEN=0]</TEXT>
+			</TEXT3>
+			<TEXT4>
+				<MASK>0x10</MASK>
+				<VALUE>0x00</VALUE>
+				<TEXT>Watchdog timer always on; [WDTON=0]</TEXT>
+			</TEXT4>
+			<TEXT5>
+				<MASK>0x08</MASK>
+				<VALUE>0x00</VALUE>
+				<TEXT>Preserve EEPROM memory through the Chip Erase cycle; [EESAVE=0]</TEXT>
+			</TEXT5>
+			<TEXT6>
+				<MASK>0x06</MASK>
+				<VALUE>0x06</VALUE>
+				<TEXT>Boot Flash section size=512 words Boot start address=$7E00; [BOOTSZ=11]</TEXT>
+			</TEXT6>
+			<TEXT7>
+				<MASK>0x06</MASK>
+				<VALUE>0x04</VALUE>
+				<TEXT>Boot Flash section size=1024 words Boot start address=$7C00; [BOOTSZ=10]</TEXT>
+			</TEXT7>
+			<TEXT8>
+				<MASK>0x06</MASK>
+				<VALUE>0x02</VALUE>
+				<TEXT>Boot Flash section size=2048 words Boot start address=$7800; [BOOTSZ=01]</TEXT>
+			</TEXT8>
+			<TEXT9>
+				<MASK>0x06</MASK>
+				<VALUE>0x00</VALUE>
+				<TEXT>Boot Flash section size=4096 words Boot start address=$7000; [BOOTSZ=00] ; default value</TEXT>
+			</TEXT9>
+			<TEXT10>
+				<MASK>0x01</MASK>
+				<VALUE>0x00</VALUE>
+				<TEXT>Boot Reset vector Enabled (default address=$0000); [BOOTRST=0]</TEXT>
+			</TEXT10>
+		</HIGH>
+		<EXTENDED>
+			<NMB_FUSE_BITS>3</NMB_FUSE_BITS>
+			<FUSE2>
+				<NAME>BODLEVEL1</NAME>
+				<TEXT>Brown-out Detector trigger level</TEXT>
+				<DEFAULT>1</DEFAULT>
+			</FUSE2>
+			<FUSE1>
+				<NAME>BODLEVEL0</NAME>
+				<TEXT>Brown-out Detector trigger level</TEXT>
+				<DEFAULT>1</DEFAULT>
+			</FUSE1>
+			<FUSE0>
+				<NAME>RESERVED</NAME>
+				<TEXT>Reserved fuse bit, do not program</TEXT>
+				<DEFAULT>1</DEFAULT>
+			</FUSE0>
+			<NMB_TEXT>5</NMB_TEXT>
+			<TEXT1>
+				<MASK>0x06</MASK>
+				<VALUE>0x06</VALUE>
+				<TEXT>Brown-out detection disabled; [BODLEVEL=11]</TEXT>
+			</TEXT1>
+			<TEXT2>
+				<MASK>0x06</MASK>
+				<VALUE>0x04</VALUE>
+				<TEXT>Brown-out detection level at VCC=1.8 V; [BODLEVEL=10]</TEXT>
+			</TEXT2>
+			<TEXT3>
+				<MASK>0x06</MASK>
+				<VALUE>0x02</VALUE>
+				<TEXT>Brown-out detection level at VCC=2.7 V; [BODLEVEL=01]</TEXT>
+			</TEXT3>
+			<TEXT4>
+				<MASK>0x06</MASK>
+				<VALUE>0x00</VALUE>
+				<TEXT>Brown-out detection level at VCC=4.3 V; [BODLEVEL=00]</TEXT>
+			</TEXT4>
+			<TEXT5>
+				<MASK>0x01</MASK>
+				<VALUE>0x00</VALUE>
+				<TEXT>External Reset Disable;[RSTDISBL=0]</TEXT>
+			</TEXT5>
+		</EXTENDED>
+	</FUSE>
+</AVRPART>

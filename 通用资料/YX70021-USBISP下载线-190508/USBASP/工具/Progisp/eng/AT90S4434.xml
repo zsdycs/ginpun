@@ -1,0 +1,60 @@
+<AVRPART>
+	<FUSE>
+		<LIST>[LOW]</LIST>
+		<ID/>
+		<ICON/>
+		<TEXT/>
+		<LOW>
+			<NMB_FUSE_BITS>2</NMB_FUSE_BITS>
+			<FUSE1>
+				<NAME>SPIEN</NAME>
+				<TEXT>Serial Program Downloading Enabled</TEXT>
+			</FUSE1>
+			<FUSE2>
+				<NAME>FSTRT</NAME>
+				<TEXT>Short Start-up time selected</TEXT>
+			</FUSE2>
+			<NMB_TEXT>2</NMB_TEXT>
+			<TEXT1>
+				<MASK>0x20</MASK>
+				<VALUE>0x00</VALUE>
+				<TEXT>Serial program downloading (SPI) enabled</TEXT>
+			</TEXT1>
+			<TEXT2>
+				<MASK>0x01</MASK>
+				<VALUE>0x00</VALUE>
+				<TEXT>Short start-up time enabled</TEXT>
+			</TEXT2>
+		</LOW>
+	</FUSE>
+	<LOCKBIT>
+		<ICON/>
+		<ID/>
+		<TEXT>[LB1 = 1 :  LB2 = 1] No memory lock features enabled. [LB1 = 0 :  LB2 = 1] Further programming of Flash and EEPROM is enabled. [LB1 = 0 :  LB2 = 0] Same as previous, but verify is also disabled</TEXT>
+		<NMB_TEXT>3</NMB_TEXT>
+		<NMB_LOCK_BITS>2</NMB_LOCK_BITS>
+		<TEXT1>
+			<MASK>0x06</MASK>
+			<VALUE>0x06</VALUE>
+			<TEXT>Mode 1: No memory lock features enabled</TEXT>
+		</TEXT1>
+		<TEXT2>
+			<MASK>0x06</MASK>
+			<VALUE>0x04</VALUE>
+			<TEXT>Mode 2: Further programming disabled</TEXT>
+		</TEXT2>
+		<TEXT3>
+			<MASK>0x06</MASK>
+			<VALUE>0x00</VALUE>
+			<TEXT>Mode 3: Further programming and verification disabled</TEXT>
+		</TEXT3>
+		<LOCKBIT0>
+			<NAME>LB1</NAME>
+			<TEXT>Lockbit</TEXT>
+		</LOCKBIT0>
+		<LOCKBIT1>
+			<NAME>LB2</NAME>
+			<TEXT>Lockbit</TEXT>
+		</LOCKBIT1>
+	</LOCKBIT>
+</AVRPART>

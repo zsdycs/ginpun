@@ -1,0 +1,13 @@
+:Base DATAPUMP.HLP>main
+:Title Data Pump Help
+:Index Data Pump Help=datapump.hlp
+:Link bde32.hlp
+:Link bdeadmin.hlp
+:Link localsql.hlp
+:Link sqllnk32.hlp
+1 Data Pump
+2 Overview: Basic procedure=pump_source_alias
+2 Inspect or modify items=pump_inspect_modify
+2 Modify fields=pump_modify_fields
+2 Modify an index on a table=pump_modify_index
+2 Report=pump_report

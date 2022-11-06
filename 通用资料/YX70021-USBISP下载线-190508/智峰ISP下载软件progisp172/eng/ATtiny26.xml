@@ -1,0 +1,956 @@
+<AVRPART>
+  <ADMIN>
+    <PART_NAME>ATtiny26</PART_NAME>
+    <SPEED>16MHZ</SPEED>
+    <SIGNATURE>
+      <ADDR000>0x1E</ADDR000>
+      <ADDR001>0x91</ADDR001>
+      <ADDR002>0x09</ADDR002>
+    </SIGNATURE>  
+  </ADMIN>
+  <PROGRAMMING>
+    <ISPInterface>
+      <FuseProgMask>0xff,0xf7</FuseProgMask>
+      <FuseWarning>1,0x08,0x08,WARNING! These fuse settings will disable the ISP interface!</FuseWarning>
+      <FuseWarning>1,0x10,0x00,WARNING! Disabling external reset will make the ISP interface inaccessible!</FuseWarning>
+    </ISPInterface>
+    <HVInterface>
+      <FuseWarning>1,0x08,0x08,WARNING! These fuse settings will disable the ISP interface!</FuseWarning>
+      <FuseWarning>1,0x10,0x00,WARNING! Disabling external reset will make the ISP interface inaccessible!</FuseWarning>
+    </HVInterface>  
+    <PRGISP>  
+        <ZIF_NO>2</ZIF_NO>   
+    </PRGISP>
+    <PRGHV>
+        <ZIF_NO>5</ZIF_NO>   
+    </PRGHV>
+    <TYPE>1</TYPE> 
+    <SUBCLASS>4</SUBCLASS> 
+    <OscCal>
+      <OCEntry>0x00,1.0 MHz</OCEntry>
+      <OCEntry>0x01,2.0 MHz</OCEntry>
+      <OCEntry>0x02,4.0 MHz</OCEntry>
+      <OCEntry>0x03,8.0 MHz</OCEntry>
+    </OscCal>
+    <PROG_FLASH>2048</PROG_FLASH>
+    <EEPROM>128</EEPROM>    
+    <FlashPageSize>32</FlashPageSize>
+    <EepromPageSize>4</EepromPageSize>
+    <WD_Flash>9</WD_Flash>
+    <WD_EEPROM>15</WD_EEPROM>
+    <WD_ERASE>50</WD_ERASE>
+    <WD_FUSE>9</WD_FUSE>
+    <WD_LOCK>9</WD_LOCK>
+    <WD_RESET>100</WD_RESET> 
+    <FuseRCMD0>0x50000000</FuseRCMD0>    
+    <FuseRCMD1>0x58080000</FuseRCMD1>    
+    <FuseRPos>3</FuseRPos>    
+    <FuseWCMD0>0xaca00000</FuseWCMD0>    
+    <FuseWCMD1>0xaca80000</FuseWCMD1>    
+    <FuseWPos>3</FuseWPos>    
+    <LockRCMD>0x58000000</LockRCMD>    
+    <LockRPos>3</LockRPos>    
+    <LockWCMD>0xace00000</LockWCMD>    
+    <LockWPos>3</LockWPos>  
+    <fusevalue>0xf7e1</fusevalue>  
+    <FuseMask>0xf7ff</FuseMask>        
+  </PROGRAMMING>
+	<FUSE>
+		<LOW>
+			<NMB_FUSE_BITS>8</NMB_FUSE_BITS>
+			<FUSE7>
+				<NAME>PLLCK</NAME>
+				<TEXT>Use PLL for internal clock</TEXT>
+				<DEFAULT>1</DEFAULT>
+			</FUSE7>
+			<FUSE6>
+				<NAME>CKOPT</NAME>
+				<TEXT>Oscillator options</TEXT>
+				<DEFAULT>1</DEFAULT>
+			</FUSE6>
+			<FUSE5>
+				<NAME>SUT1</NAME>
+				<TEXT>Select start-up time</TEXT>
+				<DEFAULT>1</DEFAULT>
+			</FUSE5>
+			<FUSE4>
+				<NAME>SUT0</NAME>
+				<TEXT>Select start-up time</TEXT>
+				<DEFAULT>0</DEFAULT>
+			</FUSE4>
+			<FUSE3>
+				<NAME>CKSEL3</NAME>
+				<TEXT>Select Clock Source</TEXT>
+				<DEFAULT>0</DEFAULT>
+			</FUSE3>
+			<FUSE2>
+				<NAME>CKSEL2</NAME>
+				<TEXT>Select Clock Source</TEXT>
+				<DEFAULT>0</DEFAULT>
+			</FUSE2>
+			<FUSE1>
+				<NAME>CKSEL1</NAME>
+				<TEXT>Select Clock Source</TEXT>
+				<DEFAULT>0</DEFAULT>
+			</FUSE1>
+			<FUSE0>
+				<NAME>CKSEL0</NAME>
+				<TEXT>Select Clock Source</TEXT>
+				<DEFAULT>1</DEFAULT>
+			</FUSE0>
+			<NMB_TEXT>63</NMB_TEXT>
+			<TEXT1>
+				<MASK>0x40</MASK>
+				<VALUE>0x00</VALUE>
+				<TEXT>CKOPT fuse (operation dependent of CKSEL fuses); [CKOPT=0]</TEXT>
+			</TEXT1>
+			<TEXT2>
+				<MASK>0xBF</MASK>
+				<VALUE>0x01</VALUE>
+				<TEXT>PLL Clock; Start-up time: 1K CK + 0 ms; [CKSEL=0001 SUT=00]</TEXT>
+			</TEXT2>
+			<TEXT3>
+				<MASK>0xBF</MASK>
+				<VALUE>0x11</VALUE>
+				<TEXT>PLL Clock; Start-up time: 1K CK + 4 ms; [CKSEL=0001 SUT=01]</TEXT>
+			</TEXT3>
+			<TEXT4>
+				<MASK>0xBF</MASK>
+				<VALUE>0x21</VALUE>
+				<TEXT>PLL Clock; Start-up time: 1K CK + 64 ms; [CKSEL=0001 SUT=10]</TEXT>
+			</TEXT4>
+			<TEXT5>
+				<MASK>0xBF</MASK>
+				<VALUE>0x31</VALUE>
+				<TEXT>PLL Clock; Start-up time: 16K CK + 64 ms; [CKSEL=0001 SUT=11]</TEXT>
+			</TEXT5>
+			<TEXT6>
+				<MASK>0xBF</MASK>
+				<VALUE>0x80</VALUE>
+				<TEXT>Ext. Clock; Start-up time: 6 CK + 0 ms; [CKSEL=0000 SUT=00]</TEXT>
+			</TEXT6>
+			<TEXT7>
+				<MASK>0xBF</MASK>
+				<VALUE>0x90</VALUE>
+				<TEXT>Ext. Clock; Start-up time: 6 CK + 4 ms; [CKSEL=0000 SUT=01]</TEXT>
+			</TEXT7>
+			<TEXT8>
+				<MASK>0xBF</MASK>
+				<VALUE>0xA0</VALUE>
+				<TEXT>Ext. Clock; Start-up time: 6 CK + 64 ms; [CKSEL=0000 SUT=10]</TEXT>
+			</TEXT8>
+			<TEXT9>
+				<MASK>0xBF</MASK>
+				<VALUE>0x81</VALUE>
+				<TEXT>Int. RC Osc. 1 MHz; Start-up time: 6 CK + 0 ms; [CKSEL=0001 SUT=00]</TEXT>
+			</TEXT9>
+			<TEXT10>
+				<MASK>0xBF</MASK>
+				<VALUE>0x91</VALUE>
+				<TEXT>Int. RC Osc. 1 MHz; Start-up time: 6 CK + 4 ms; [CKSEL=0001 SUT=01]</TEXT>
+			</TEXT10>
+			<TEXT11>
+				<MASK>0xBF</MASK>
+				<VALUE>0xA1</VALUE>
+				<TEXT>Int. RC Osc. 1 MHz; Start-up time: 6 CK + 64 ms; [CKSEL=0001 SUT=10]; default value</TEXT>
+			</TEXT11>
+			<TEXT12>
+				<MASK>0xBF</MASK>
+				<VALUE>0x82</VALUE>
+				<TEXT>Int. RC Osc. 2 MHz; Start-up time: 6 CK + 0 ms; [CKSEL=0010 SUT=00]</TEXT>
+			</TEXT12>
+			<TEXT13>
+				<MASK>0xBF</MASK>
+				<VALUE>0x92</VALUE>
+				<TEXT>Int. RC Osc. 2 MHz; Start-up time: 6 CK + 4 ms; [CKSEL=0010 SUT=01]</TEXT>
+			</TEXT13>
+			<TEXT14>
+				<MASK>0xBF</MASK>
+				<VALUE>0xA2</VALUE>
+				<TEXT>Int. RC Osc. 2 MHz; Start-up time: 6 CK + 64 ms; [CKSEL=0010 SUT=10]</TEXT>
+			</TEXT14>
+			<TEXT15>
+				<MASK>0xBF</MASK>
+				<VALUE>0x83</VALUE>
+				<TEXT>Int. RC Osc. 4 MHz; Start-up time: 6 CK + 0 ms; [CKSEL=0011 SUT=00]</TEXT>
+			</TEXT15>
+			<TEXT16>
+				<MASK>0xBF</MASK>
+				<VALUE>0x93</VALUE>
+				<TEXT>Int. RC Osc. 4 MHz; Start-up time: 6 CK + 4 ms; [CKSEL=0011 SUT=01]</TEXT>
+			</TEXT16>
+			<TEXT17>
+				<MASK>0xBF</MASK>
+				<VALUE>0xA3</VALUE>
+				<TEXT>Int. RC Osc. 4 MHz; Start-up time: 6 CK + 64 ms; [CKSEL=0011 SUT=10]</TEXT>
+			</TEXT17>
+			<TEXT18>
+				<MASK>0xBF</MASK>
+				<VALUE>0x84</VALUE>
+				<TEXT>Int. RC Osc. 8 MHz; Start-up time: 6 CK + 0 ms; [CKSEL=0100 SUT=00]</TEXT>
+			</TEXT18>
+			<TEXT19>
+				<MASK>0xBF</MASK>
+				<VALUE>0x94</VALUE>
+				<TEXT>Int. RC Osc. 8 MHz; Start-up time: 6 CK + 4 ms; [CKSEL=0100 SUT=01]</TEXT>
+			</TEXT19>
+			<TEXT20>
+				<MASK>0xBF</MASK>
+				<VALUE>0xA4</VALUE>
+				<TEXT>Int. RC Osc. 8 MHz; Start-up time: 6 CK + 64 ms; [CKSEL=0100 SUT=10]</TEXT>
+			</TEXT20>
+			<TEXT21>
+				<MASK>0xBF</MASK>
+				<VALUE>0x85</VALUE>
+				<TEXT>Ext. RC Osc.         -  0.9 MHz; Start-up time: 18 CK + 0 ms; [CKSEL=0101 SUT=00]</TEXT>
+			</TEXT21>
+			<TEXT22>
+				<MASK>0xBF</MASK>
+				<VALUE>0x95</VALUE>
+				<TEXT>Ext. RC Osc.         -  0.9 MHz; Start-up time: 18 CK + 4 ms; [CKSEL=0101 SUT=01]</TEXT>
+			</TEXT22>
+			<TEXT23>
+				<MASK>0xBF</MASK>
+				<VALUE>0xA5</VALUE>
+				<TEXT>Ext. RC Osc.         -  0.9 MHz; Start-up time: 18 CK + 64 ms; [CKSEL=0101 SUT=10]</TEXT>
+			</TEXT23>
+			<TEXT24>
+				<MASK>0xBF</MASK>
+				<VALUE>0xB5</VALUE>
+				<TEXT>Ext. RC Osc.         -  0.9 MHz; Start-up time: 6 CK + 4 ms; [CKSEL=0101 SUT=11]</TEXT>
+			</TEXT24>
+			<TEXT25>
+				<MASK>0xBF</MASK>
+				<VALUE>0x86</VALUE>
+				<TEXT>Ext. RC Osc. 0.9 MHz -  3.0 MHz; Start-up time: 18 CK + 0 ms; [CKSEL=0110 SUT=00]</TEXT>
+			</TEXT25>
+			<TEXT26>
+				<MASK>0xBF</MASK>
+				<VALUE>0x96</VALUE>
+				<TEXT>Ext. RC Osc. 0.9 MHz -  3.0 MHz; Start-up time: 18 CK + 4 ms; [CKSEL=0110 SUT=01]</TEXT>
+			</TEXT26>
+			<TEXT27>
+				<MASK>0xBF</MASK>
+				<VALUE>0xA6</VALUE>
+				<TEXT>Ext. RC Osc. 0.9 MHz -  3.0 MHz; Start-up time: 18 CK + 64 ms; [CKSEL=0110 SUT=10]</TEXT>
+			</TEXT27>
+			<TEXT28>
+				<MASK>0xBF</MASK>
+				<VALUE>0xB6</VALUE>
+				<TEXT>Ext. RC Osc. 0.9 MHz -  3.0 MHz; Start-up time: 6 CK + 4 ms; [CKSEL=0110 SUT=11]</TEXT>
+			</TEXT28>
+			<TEXT29>
+				<MASK>0xBF</MASK>
+				<VALUE>0x87</VALUE>
+				<TEXT>Ext. RC Osc. 3.0 MHz -  8.0 MHz; Start-up time: 18 CK + 0 ms; [CKSEL=0111 SUT=00]</TEXT>
+			</TEXT29>
+			<TEXT30>
+				<MASK>0xBF</MASK>
+				<VALUE>0x97</VALUE>
+				<TEXT>Ext. RC Osc. 3.0 MHz -  8.0 MHz; Start-up time: 18 CK + 4 ms; [CKSEL=0111 SUT=01]</TEXT>
+			</TEXT30>
+			<TEXT31>
+				<MASK>0xBF</MASK>
+				<VALUE>0xA7</VALUE>
+				<TEXT>Ext. RC Osc. 3.0 MHz -  8.0 MHz; Start-up time: 18 CK + 64 ms; [CKSEL=0111 SUT=10]</TEXT>
+			</TEXT31>
+			<TEXT32>
+				<MASK>0xBF</MASK>
+				<VALUE>0xB7</VALUE>
+				<TEXT>Ext. RC Osc. 3.0 MHz -  8.0 MHz; Start-up time: 6 CK + 4 ms; [CKSEL=0111 SUT=11]</TEXT>
+			</TEXT32>
+			<TEXT33>
+				<MASK>0xBF</MASK>
+				<VALUE>0x88</VALUE>
+				<TEXT>Ext. RC Osc. 8.0 MHz - 12.0 MHz; Start-up time: 18 CK + 0 ms; [CKSEL=1000 SUT=00]</TEXT>
+			</TEXT33>
+			<TEXT34>
+				<MASK>0xBF</MASK>
+				<VALUE>0x98</VALUE>
+				<TEXT>Ext. RC Osc. 8.0 MHz - 12.0 MHz; Start-up time: 18 CK + 4 ms; [CKSEL=1000 SUT=01]</TEXT>
+			</TEXT34>
+			<TEXT35>
+				<MASK>0xBF</MASK>
+				<VALUE>0xA8</VALUE>
+				<TEXT>Ext. RC Osc. 8.0 MHz - 12.0 MHz; Start-up time: 18 CK + 64 ms; [CKSEL=1000 SUT=10]</TEXT>
+			</TEXT35>
+			<TEXT36>
+				<MASK>0xBF</MASK>
+				<VALUE>0xB8</VALUE>
+				<TEXT>Ext. RC Osc. 8.0 MHz - 12.0 MHz; Start-up time: 6 CK + 4 ms; [CKSEL=1000 SUT=11]</TEXT>
+			</TEXT36>
+			<TEXT37>
+				<MASK>0xBF</MASK>
+				<VALUE>0x89</VALUE>
+				<TEXT>Ext. Low-Freq. Crystal; Start-up time: 1K CK + 4 ms; [CKSEL=1001 SUT=00]</TEXT>
+			</TEXT37>
+			<TEXT38>
+				<MASK>0xBF</MASK>
+				<VALUE>0x99</VALUE>
+				<TEXT>Ext. Low-Freq. Crystal; Start-up time: 1K CK + 64 ms; [CKSEL=1001 SUT=01]</TEXT>
+			</TEXT38>
+			<TEXT39>
+				<MASK>0xBF</MASK>
+				<VALUE>0xA9</VALUE>
+				<TEXT>Ext. Low-Freq. Crystal; Start-up time: 32K CK + 64 ms; [CKSEL=1001 SUT=10]</TEXT>
+			</TEXT39>
+			<TEXT40>
+				<MASK>0xBF</MASK>
+				<VALUE>0x8A</VALUE>
+				<TEXT>Ext. Crystal/Resonator Low Freq.; Start-up time: 258 CK + 4 ms; [CKSEL=1010 SUT=00]</TEXT>
+			</TEXT40>
+			<TEXT41>
+				<MASK>0xBF</MASK>
+				<VALUE>0x9A</VALUE>
+				<TEXT>Ext. Crystal/Resonator Low Freq.; Start-up time: 258 CK + 64 ms; [CKSEL=1010 SUT=01]</TEXT>
+			</TEXT41>
+			<TEXT42>
+				<MASK>0xBF</MASK>
+				<VALUE>0xAA</VALUE>
+				<TEXT>Ext. Crystal/Resonator Low Freq.; Start-up time: 1K CK + 0 ms; [CKSEL=1010 SUT=10]</TEXT>
+			</TEXT42>
+			<TEXT43>
+				<MASK>0xBF</MASK>
+				<VALUE>0xBA</VALUE>
+				<TEXT>Ext. Crystal/Resonator Low Freq.; Start-up time: 1K CK + 4 ms; [CKSEL=1010 SUT=11]</TEXT>
+			</TEXT43>
+			<TEXT44>
+				<MASK>0xBF</MASK>
+				<VALUE>0x8B</VALUE>
+				<TEXT>Ext. Crystal/Resonator Low Freq.; Start-up time: 1K CK + 64 ms; [CKSEL=1011 SUT=00]</TEXT>
+			</TEXT44>
+			<TEXT45>
+				<MASK>0xBF</MASK>
+				<VALUE>0x9B</VALUE>
+				<TEXT>Ext. Crystal/Resonator Low Freq.; Start-up time: 16K CK + 0 ms; [CKSEL=1011 SUT=01]</TEXT>
+			</TEXT45>
+			<TEXT46>
+				<MASK>0xBF</MASK>
+				<VALUE>0xAB</VALUE>
+				<TEXT>Ext. Crystal/Resonator Low Freq.; Start-up time: 16K CK + 4 ms; [CKSEL=1011 SUT=10]</TEXT>
+			</TEXT46>
+			<TEXT47>
+				<MASK>0xBF</MASK>
+				<VALUE>0xBB</VALUE>
+				<TEXT>Ext. Crystal/Resonator Low Freq.; Start-up time: 16K CK + 64 ms; [CKSEL=1011 SUT=11]</TEXT>
+			</TEXT47>
+			<TEXT48>
+				<MASK>0xBF</MASK>
+				<VALUE>0x8C</VALUE>
+				<TEXT>Ext. Crystal/Resonator Medium Freq.; Start-up time: 258 CK + 4 ms; [CKSEL=1100 SUT=00]</TEXT>
+			</TEXT48>
+			<TEXT49>
+				<MASK>0xBF</MASK>
+				<VALUE>0x9C</VALUE>
+				<TEXT>Ext. Crystal/Resonator Medium Freq.; Start-up time: 258 CK + 64 ms; [CKSEL=1100 SUT=01]</TEXT>
+			</TEXT49>
+			<TEXT50>
+				<MASK>0xBF</MASK>
+				<VALUE>0xAC</VALUE>
+				<TEXT>Ext. Crystal/Resonator Medium Freq.; Start-up time: 1K CK + 0 ms; [CKSEL=1100 SUT=10]</TEXT>
+			</TEXT50>
+			<TEXT51>
+				<MASK>0xBF</MASK>
+				<VALUE>0xBC</VALUE>
+				<TEXT>Ext. Crystal/Resonator Medium Freq.; Start-up time: 1K CK + 4 ms; [CKSEL=1100 SUT=11]</TEXT>
+			</TEXT51>
+			<TEXT52>
+				<MASK>0xBF</MASK>
+				<VALUE>0x8D</VALUE>
+				<TEXT>Ext. Crystal/Resonator Medium Freq.; Start-up time: 1K CK + 64 ms; [CKSEL=1101 SUT=00]</TEXT>
+			</TEXT52>
+			<TEXT53>
+				<MASK>0xBF</MASK>
+				<VALUE>0x9D</VALUE>
+				<TEXT>Ext. Crystal/Resonator Medium Freq.; Start-up time: 16K CK + 0 ms; [CKSEL=1101 SUT=01]</TEXT>
+			</TEXT53>
+			<TEXT54>
+				<MASK>0xBF</MASK>
+				<VALUE>0xAD</VALUE>
+				<TEXT>Ext. Crystal/Resonator Medium Freq.; Start-up time: 16K CK + 4 ms; [CKSEL=1101 SUT=10]</TEXT>
+			</TEXT54>
+			<TEXT55>
+				<MASK>0xBF</MASK>
+				<VALUE>0xBD</VALUE>
+				<TEXT>Ext. Crystal/Resonator Medium Freq.; Start-up time: 16K CK + 64 ms; [CKSEL=1101 SUT=11]</TEXT>
+			</TEXT55>
+			<TEXT56>
+				<MASK>0xBF</MASK>
+				<VALUE>0x8E</VALUE>
+				<TEXT>Ext. Crystal/Resonator High Freq.; Start-up time: 258 CK + 4 ms; [CKSEL=1110 SUT=00]</TEXT>
+			</TEXT56>
+			<TEXT57>
+				<MASK>0xBF</MASK>
+				<VALUE>0x9E</VALUE>
+				<TEXT>Ext. Crystal/Resonator High Freq.; Start-up time: 258 CK + 64 ms; [CKSEL=1110 SUT=01]</TEXT>
+			</TEXT57>
+			<TEXT58>
+				<MASK>0xBF</MASK>
+				<VALUE>0xAE</VALUE>
+				<TEXT>Ext. Crystal/Resonator High Freq.; Start-up time: 1K CK + 0 ms; [CKSEL=1110 SUT=10]</TEXT>
+			</TEXT58>
+			<TEXT59>
+				<MASK>0xBF</MASK>
+				<VALUE>0xBE</VALUE>
+				<TEXT>Ext. Crystal/Resonator High Freq.; Start-up time: 1K CK + 4 ms; [CKSEL=1110 SUT=11]</TEXT>
+			</TEXT59>
+			<TEXT60>
+				<MASK>0xBF</MASK>
+				<VALUE>0x8F</VALUE>
+				<TEXT>Ext. Crystal/Resonator High Freq.; Start-up time: 1K CK + 64 ms; [CKSEL=1111 SUT=00]</TEXT>
+			</TEXT60>
+			<TEXT61>
+				<MASK>0xBF</MASK>
+				<VALUE>0x9F</VALUE>
+				<TEXT>Ext. Crystal/Resonator High Freq.; Start-up time: 16K CK + 0 ms; [CKSEL=1111 SUT=01]</TEXT>
+			</TEXT61>
+			<TEXT62>
+				<MASK>0xBF</MASK>
+				<VALUE>0xAF</VALUE>
+				<TEXT>Ext. Crystal/Resonator High Freq.; Start-up time: 16K CK + 4 ms; [CKSEL=1111 SUT=10]</TEXT>
+			</TEXT62>
+			<TEXT63>
+				<MASK>0xBF</MASK>
+				<VALUE>0xBF</VALUE>
+				<TEXT>Ext. Crystal/Resonator High Freq.; Start-up time: 16K CK + 64 ms; [CKSEL=1111 SUT=11]</TEXT>
+			</TEXT63>
+		</LOW>
+		<HIGH>
+			<NMB_FUSE_BITS>5</NMB_FUSE_BITS>
+			<FUSE4>
+				<NAME>RSTDISBL</NAME>
+				<TEXT>Select if PB/ is I/O pin or RESET pin</TEXT>
+				<DEFAULT>1</DEFAULT>
+			</FUSE4>
+			<FUSE3>
+				<NAME>SPIEN</NAME>
+				<TEXT>Enable Serial Program and Data Downloading</TEXT>
+				<DEFAULT>0</DEFAULT>
+			</FUSE3>
+			<FUSE2>
+				<NAME>EESAVE</NAME>
+				<TEXT>EEPROM memory is preserved through the Chip Erase</TEXT>
+				<DEFAULT>1</DEFAULT>
+			</FUSE2>
+			<FUSE1>
+				<NAME>BODLEVEL</NAME>
+				<TEXT>Brown out detector trigger level</TEXT>
+				<DEFAULT>1</DEFAULT>
+			</FUSE1>
+			<FUSE0>
+				<NAME>BODEN</NAME>
+				<TEXT>Brown out detector enable</TEXT>
+				<DEFAULT>1</DEFAULT>
+			</FUSE0>
+			<NMB_TEXT>6</NMB_TEXT>
+			<TEXT1>
+				<MASK>0x10</MASK>
+				<VALUE>0x00</VALUE>
+				<TEXT>Reset Disabled (Enable PB7 as i/o pin); [RSTDISBL=0]</TEXT>
+			</TEXT1>
+			<TEXT2>
+				<MASK>0x08</MASK>
+				<VALUE>0x00</VALUE>
+				<TEXT>Serial program downloading (SPI) enabled; [SPIEN=0]</TEXT>
+			</TEXT2>
+			<TEXT3>
+				<MASK>0x04</MASK>
+				<VALUE>0x00</VALUE>
+				<TEXT>Preserve EEPROM memory through the Chip Erase cycle; [EESAVE=0]</TEXT>
+			</TEXT3>
+			<TEXT4>
+				<MASK>0x02</MASK>
+				<VALUE>0x00</VALUE>
+				<TEXT>Brown-out detection level at VCC=4.0 V; [BODLEVEL=0]</TEXT>
+			</TEXT4>
+			<TEXT5>
+				<MASK>0x02</MASK>
+				<VALUE>0x02</VALUE>
+				<TEXT>Brown-out detection level at VCC=2.7 V; [BODLEVEL=1]</TEXT>
+			</TEXT5>
+			<TEXT6>
+				<MASK>0x01</MASK>
+				<VALUE>0x00</VALUE>
+				<TEXT>Brown-out detection enabled; [BODEN=0]</TEXT>
+			</TEXT6>
+		</HIGH>
+	</FUSE>
+	<LOCKBIT>
+		<TEXT>[LB1 = 1 :  LB2 = 1] No memory lock features enabled. [LB1 = 0 :  LB2 = 1] Further programming of Flash and EEPROM is enabled. [LB1 = 0 :  LB2 = 0] Same as previous, but verify is also disabled</TEXT>
+		<NMB_TEXT>3</NMB_TEXT>
+		<NMB_LOCK_BITS>2</NMB_LOCK_BITS>
+		<TEXT1>
+			<MASK>0x03</MASK>
+			<VALUE>0x03</VALUE>
+			<TEXT>Mode 1: No memory lock features enabled</TEXT>
+		</TEXT1>
+		<TEXT2>
+			<MASK>0x03</MASK>
+			<VALUE>0x02</VALUE>
+			<TEXT>Mode 2: Further programming disabled</TEXT>
+		</TEXT2>
+		<TEXT3>
+			<MASK>0x03</MASK>
+			<VALUE>0x00</VALUE>
+			<TEXT>Mode 3: Further programming and verification disabled</TEXT>
+		</TEXT3>
+		<LOCKBIT0>
+			<NAME>LB1</NAME>
+			<TEXT>Lockbit</TEXT>
+		</LOCKBIT0>
+		<LOCKBIT1>
+			<NAME>LB2</NAME>
+			<TEXT>Lockbit</TEXT>
+		</LOCKBIT1>
+	</LOCKBIT>
+	<CHINESE>
+	<FUSE>
+		<LOW>
+			<NMB_FUSE_BITS>8</NMB_FUSE_BITS>
+			<FUSE7>
+				<NAME>PLLCK</NAME>
+				<TEXT>Use PLL for internal clock</TEXT>
+				<DEFAULT>1</DEFAULT>
+			</FUSE7>
+			<FUSE6>
+				<NAME>CKOPT</NAME>
+				<TEXT>Oscillator options</TEXT>
+				<DEFAULT>1</DEFAULT>
+			</FUSE6>
+			<FUSE5>
+				<NAME>SUT1</NAME>
+				<TEXT>Select start-up time</TEXT>
+				<DEFAULT>1</DEFAULT>
+			</FUSE5>
+			<FUSE4>
+				<NAME>SUT0</NAME>
+				<TEXT>Select start-up time</TEXT>
+				<DEFAULT>1</DEFAULT>
+			</FUSE4>
+			<FUSE3>
+				<NAME>CKSEL3</NAME>
+				<TEXT>Select Clock Source</TEXT>
+				<DEFAULT>1</DEFAULT>
+			</FUSE3>
+			<FUSE2>
+				<NAME>CKSEL2</NAME>
+				<TEXT>Select Clock Source</TEXT>
+				<DEFAULT>0</DEFAULT>
+			</FUSE2>
+			<FUSE1>
+				<NAME>CKSEL1</NAME>
+				<TEXT>Select Clock Source</TEXT>
+				<DEFAULT>0</DEFAULT>
+			</FUSE1>
+			<FUSE0>
+				<NAME>CKSEL0</NAME>
+				<TEXT>Select Clock Source</TEXT>
+				<DEFAULT>1</DEFAULT>
+			</FUSE0>
+			<NMB_TEXT>63</NMB_TEXT>
+			<TEXT1>
+				<MASK>0x40</MASK>
+				<VALUE>0x00</VALUE>
+<TEXT> 使能CKOPT(振荡器在输出引脚(X2)产生满幅度的振荡)[CKOPT=0]</TEXT>
+			</TEXT1>
+			<TEXT2>
+				<MASK>0xBF</MASK>
+				<VALUE>0x01</VALUE>
+<TEXT> 内部RC振荡器(1MHz);起动时间6CK+0ms[CKSEL=0001 SUT=00]</TEXT>
+			</TEXT2>
+			<TEXT3>
+				<MASK>0xBF</MASK>
+				<VALUE>0x11</VALUE>
+<TEXT> 内部RC振荡器(1MHz);起动时间6CK+4ms[CKSEL=0001 SUT=01]</TEXT>
+			</TEXT3>
+			<TEXT4>
+				<MASK>0xBF</MASK>
+				<VALUE>0x21</VALUE>
+<TEXT> 内部RC振荡器(1MHz);起动时间64ms[CKSEL=0001 SUT=10]</TEXT>
+			</TEXT4>
+			<TEXT5>
+				<MASK>0xBF</MASK>
+				<VALUE>0x31</VALUE>
+<TEXT> PLL时钟;起动时间16K CK+64ms[CKSEL=0001 SUT=11]</TEXT>
+			</TEXT5>
+			<TEXT6>
+				<MASK>0xBF</MASK>
+				<VALUE>0x80</VALUE>
+<TEXT> 外部时钟;起动时间6CK+0ms[CKSEL=0000 SUT=00]</TEXT>
+			</TEXT6>
+			<TEXT7>
+				<MASK>0xBF</MASK>
+				<VALUE>0x90</VALUE>
+<TEXT> 外部时钟;起动时间6CK+4ms[CKSEL=0000 SUT=01]</TEXT>
+			</TEXT7>
+			<TEXT8>
+				<MASK>0xBF</MASK>
+				<VALUE>0xA0</VALUE>
+<TEXT> 外部时钟;起动时间6CK+64ms[CKSEL=0000 SUT=10]</TEXT>
+			</TEXT8>
+			<TEXT9>
+				<MASK>0xBF</MASK>
+				<VALUE>0x81</VALUE>
+				<TEXT>Int. RC Osc. 1 MHz; Start-up time: 6 CK + 0 ms; [CKSEL=0001 SUT=00]</TEXT>
+			</TEXT9>
+			<TEXT10>
+				<MASK>0xBF</MASK>
+				<VALUE>0x91</VALUE>
+				<TEXT>Int. RC Osc. 1 MHz; Start-up time: 6 CK + 4 ms; [CKSEL=0001 SUT=01]</TEXT>
+			</TEXT10>
+			<TEXT11>
+				<MASK>0xBF</MASK>
+				<VALUE>0xA1</VALUE>
+				<TEXT>Int. RC Osc. 1 MHz; Start-up time: 6 CK + 64 ms; [CKSEL=0001 SUT=10]; default value</TEXT>
+			</TEXT11>
+			<TEXT12>
+				<MASK>0xBF</MASK>
+				<VALUE>0x82</VALUE>
+<TEXT> 内部RC振荡器(2MHz);起动时间6CK+0ms[CKSEL=0010 SUT=00]</TEXT>
+			</TEXT12>
+			<TEXT13>
+				<MASK>0xBF</MASK>
+				<VALUE>0x92</VALUE>
+<TEXT> 内部RC振荡器(2MHz);起动时间6CK+4ms[CKSEL=0010 SUT=01]</TEXT>
+			</TEXT13>
+			<TEXT14>
+				<MASK>0xBF</MASK>
+				<VALUE>0xA2</VALUE>
+<TEXT> 内部RC振荡器(2MHz);起动时间6CK+64ms[CKSEL=0010 SUT=10]</TEXT>
+			</TEXT14>
+			<TEXT15>
+				<MASK>0xBF</MASK>
+				<VALUE>0x83</VALUE>
+				<TEXT>Int. RC Osc. 4 MHz; Start-up time: 6 CK + 0 ms; [CKSEL=0011 SUT=00]</TEXT>
+			</TEXT15>
+			<TEXT16>
+				<MASK>0xBF</MASK>
+				<VALUE>0x93</VALUE>
+<TEXT> 内部RC振荡器(4MHz);起动时间6CK+64ms[CKSEL=0011 SUT=01]</TEXT>
+			</TEXT16>
+			<TEXT17>
+				<MASK>0xBF</MASK>
+				<VALUE>0xA3</VALUE>
+				<TEXT>Int. RC Osc. 4 MHz; Start-up time: 6 CK + 64 ms; [CKSEL=0011 SUT=10]</TEXT>
+			</TEXT17>
+			<TEXT18>
+				<MASK>0xBF</MASK>
+				<VALUE>0x84</VALUE>
+				<TEXT>Int. RC Osc. 8 MHz; Start-up time: 6 CK + 0 ms; [CKSEL=0100 SUT=00]</TEXT>
+			</TEXT18>
+			<TEXT19>
+				<MASK>0xBF</MASK>
+				<VALUE>0x94</VALUE>
+<TEXT> 内部RC振荡器(8MHz);起动时间CK+64ms[CKSEL=0100 SUT=01]</TEXT>
+			</TEXT19>
+			<TEXT20>
+				<MASK>0xBF</MASK>
+				<VALUE>0xA4</VALUE>
+				<TEXT>Int. RC Osc. 8 MHz; Start-up time: 6 CK + 64 ms; [CKSEL=0100 SUT=10]</TEXT>
+			</TEXT20>
+			<TEXT21>
+				<MASK>0xBF</MASK>
+				<VALUE>0x85</VALUE>
+<TEXT> 外部RC振荡器(-0.9 MHz);起动时间18 CK+0ms[CKSEL=0101 SUT=00]</TEXT>
+			</TEXT21>
+			<TEXT22>
+				<MASK>0xBF</MASK>
+				<VALUE>0x95</VALUE>
+<TEXT> 外部RC振荡器(-0.9 MHz);起动时间18 CK+4ms[CKSEL=0101 SUT=01]</TEXT>
+			</TEXT22>
+			<TEXT23>
+				<MASK>0xBF</MASK>
+				<VALUE>0xA5</VALUE>
+<TEXT> 外部RC振荡器(-0.9 MHz);起动时间18 CK+64ms[CKSEL=0101 SUT=10]</TEXT>
+			</TEXT23>
+			<TEXT24>
+				<MASK>0xBF</MASK>
+				<VALUE>0xB5</VALUE>
+<TEXT> 外部RC振荡器(-0.9 MHz);起动时间6 CK+4ms[CKSEL=0101 SUT=11]</TEXT>
+			</TEXT24>
+			<TEXT25>
+				<MASK>0xBF</MASK>
+				<VALUE>0x86</VALUE>
+<TEXT> 外部RC振荡器(0.9-3.0 MHz);起动时间18 CK+0ms[CKSEL=0110 SUT=00]</TEXT>
+			</TEXT25>
+			<TEXT26>
+				<MASK>0xBF</MASK>
+				<VALUE>0x96</VALUE>
+<TEXT> 外部RC振荡器(0.9-3.0 MHz);起动时间18 CK+4ms[CKSEL=0110 SUT=01]</TEXT>
+			</TEXT26>
+			<TEXT27>
+				<MASK>0xBF</MASK>
+				<VALUE>0xA6</VALUE>
+<TEXT> 外部RC振荡器(0.9-3.0 MHz);起动时间18 CK+64ms[CKSEL=0110 SUT=10]</TEXT>
+			</TEXT27>
+			<TEXT28>
+				<MASK>0xBF</MASK>
+				<VALUE>0xB6</VALUE>
+<TEXT> 外部RC振荡器(0.9-3.0 MHz);起动时间6 CK+4ms[CKSEL=0110 SUT=11]</TEXT>
+			</TEXT28>
+			<TEXT29>
+				<MASK>0xBF</MASK>
+				<VALUE>0x87</VALUE>
+<TEXT> 外部RC振荡器(3.0-8.0 MHz);起动时间18 CK+0ms[CKSEL=0111 SUT=00]</TEXT>
+			</TEXT29>
+			<TEXT30>
+				<MASK>0xBF</MASK>
+				<VALUE>0x97</VALUE>
+<TEXT> 外部RC振荡器(3.0-8.0 MHz);起动时间18 CK+4ms[CKSEL=0111 SUT=01]</TEXT>
+			</TEXT30>
+			<TEXT31>
+				<MASK>0xBF</MASK>
+				<VALUE>0xA7</VALUE>
+<TEXT> 外部RC振荡器(3.0-8.0 MHz);起动时间18 CK+64ms[CKSEL=0111 SUT=10]</TEXT>
+			</TEXT31>
+			<TEXT32>
+				<MASK>0xBF</MASK>
+				<VALUE>0xB7</VALUE>
+<TEXT> 外部RC振荡器(3.0-8.0 MHz);起动时间6 CK+4ms[CKSEL=0111 SUT=11]</TEXT>
+			</TEXT32>
+			<TEXT33>
+				<MASK>0xBF</MASK>
+				<VALUE>0x88</VALUE>
+<TEXT> 外部RC振荡器(8.0-12.0 MHz);起动时间18CK+0ms[CKSEL=1000 SUT=00]</TEXT>
+			</TEXT33>
+			<TEXT34>
+				<MASK>0xBF</MASK>
+				<VALUE>0x98</VALUE>
+<TEXT> 外部RC振荡器(8.0-12.0 MHz);起动时间18CK+4ms[CKSEL=1000 SUT=01]</TEXT>
+			</TEXT34>
+			<TEXT35>
+				<MASK>0xBF</MASK>
+				<VALUE>0xA8</VALUE>
+<TEXT> 外部RC振荡器(8.0-12.0 MHz);起动时间18CK+64ms[CKSEL=1000 SUT=10]</TEXT>
+			</TEXT35>
+			<TEXT36>
+				<MASK>0xBF</MASK>
+				<VALUE>0xB8</VALUE>
+<TEXT> 外部RC振荡器(8.0-12.0 MHz);起动时间6CK+ 4ms[CKSEL=1000 SUT=11]</TEXT>
+			</TEXT36>
+			<TEXT37>
+				<MASK>0xBF</MASK>
+				<VALUE>0x89</VALUE>
+<TEXT> 外部低频晶振(32.768KHz);起动时间1K CK+4ms[CKSEL=1001 SUT=00]</TEXT>
+			</TEXT37>
+			<TEXT38>
+				<MASK>0xBF</MASK>
+				<VALUE>0x99</VALUE>
+<TEXT> 外部低频晶振(32.768KHz);起动时间1K CK+64ms[CKSEL=1001 SUT=01]</TEXT>
+			</TEXT38>
+			<TEXT39>
+				<MASK>0xBF</MASK>
+				<VALUE>0xA9</VALUE>
+<TEXT> 外部低频晶振(32.768KHz);起动时间32K CK+64ms[CKSEL=1001 SUT=10]</TEXT>
+			</TEXT39>
+			<TEXT40>
+				<MASK>0xBF</MASK>
+				<VALUE>0x8A</VALUE>
+<TEXT> 外部晶振(0.4-0.9 MHz);起动时间258 CK+4ms[CKSEL=1010 SUT=00]</TEXT>
+			</TEXT40>
+			<TEXT41>
+				<MASK>0xBF</MASK>
+				<VALUE>0x9A</VALUE>
+<TEXT> 外部晶振(0.4-0.9 MHz);起动时间258 CK+64ms[CKSEL=1010 SUT=01]</TEXT>
+			</TEXT41>
+			<TEXT42>
+				<MASK>0xBF</MASK>
+				<VALUE>0xAA</VALUE>
+<TEXT> 外部晶振(0.4-0.9 MHz);起动时间1k CK+0ms[CKSEL=1010 SUT=10]</TEXT>
+			</TEXT42>
+			<TEXT43>
+				<MASK>0xBF</MASK>
+				<VALUE>0xBA</VALUE>
+<TEXT> 外部晶振(0.4-0.9 MHz);起动时间1k CK+64ms[CKSEL=1010 SUT=11]</TEXT>
+			</TEXT43>
+			<TEXT44>
+				<MASK>0xBF</MASK>
+				<VALUE>0x8B</VALUE>
+<TEXT> 外部晶振(0.4-0.9 MHz);起动时间1k CK+64ms[CKSEL=1011 SUT=00]</TEXT>
+			</TEXT44>
+			<TEXT45>
+				<MASK>0xBF</MASK>
+				<VALUE>0x9B</VALUE>
+<TEXT> 外部晶振(0.4-0.9 MHz);起动时间16k CK+0ms[CKSEL=1011 SUT=01]</TEXT>
+			</TEXT45>
+			<TEXT46>
+				<MASK>0xBF</MASK>
+				<VALUE>0xAB</VALUE>
+<TEXT> 外部晶振(0.4-0.9 MHz);起动时间16k CK+4ms[CKSEL=1011 SUT=10]</TEXT>
+			</TEXT46>
+			<TEXT47>
+				<MASK>0xBF</MASK>
+				<VALUE>0xBB</VALUE>
+<TEXT> 外部晶振(0.4-0.9 MHz);起动时间16k CK+64ms[CKSEL=1011 SUT=11]</TEXT>
+			</TEXT47>
+			<TEXT48>
+				<MASK>0xBF</MASK>
+				<VALUE>0x8C</VALUE>
+<TEXT> 外部晶振(0.9-3.0 MHz);起动时间258 CK+4ms[CKSEL=1100 SUT=00]</TEXT>
+			</TEXT48>
+			<TEXT49>
+				<MASK>0xBF</MASK>
+				<VALUE>0x9C</VALUE>
+<TEXT> 外部晶振(0.9-3.0 MHz);起动时间258 CK+64ms[CKSEL=1100 SUT=01]</TEXT>
+			</TEXT49>
+			<TEXT50>
+				<MASK>0xBF</MASK>
+				<VALUE>0xAC</VALUE>
+<TEXT> 外部晶振(0.9-3.0 MHz);起动时间1k CK+0ms[CKSEL=1100 SUT=10]</TEXT>
+			</TEXT50>
+			<TEXT51>
+				<MASK>0xBF</MASK>
+				<VALUE>0xBC</VALUE>
+<TEXT> 外部晶振(0.9-3.0 MHz);起动时间1k CK+64ms[CKSEL=1100 SUT=11]</TEXT>
+			</TEXT51>
+			<TEXT52>
+				<MASK>0xBF</MASK>
+				<VALUE>0x8D</VALUE>
+<TEXT> 外部晶振(0.9-3.0 MHz);起动时间1k CK+64ms[CKSEL=1101 SUT=00]</TEXT>
+			</TEXT52>
+			<TEXT53>
+				<MASK>0xBF</MASK>
+				<VALUE>0x9D</VALUE>
+<TEXT> 外部晶振(0.9-3.0 MHz);起动时间16k CK+0ms[CKSEL=1101 SUT=01]</TEXT>
+			</TEXT53>
+			<TEXT54>
+				<MASK>0xBF</MASK>
+				<VALUE>0xAD</VALUE>
+<TEXT> 外部晶振(0.9-3.0 MHz);起动时间16k CK+4ms[CKSEL=1101 SUT=10]</TEXT>
+			</TEXT54>
+			<TEXT55>
+				<MASK>0xBF</MASK>
+				<VALUE>0xBD</VALUE>
+<TEXT> 外部晶振(0.9-3.0 MHz);起动时间16k CK+64ms[CKSEL=1101 SUT=11]</TEXT>
+			</TEXT55>
+			<TEXT56>
+				<MASK>0xBF</MASK>
+				<VALUE>0x8E</VALUE>
+<TEXT> 外部晶振(3.0-16MHz);起动时间258 CK+4ms[CKSEL=1110 SUT=00]</TEXT>
+			</TEXT56>
+			<TEXT57>
+				<MASK>0xBF</MASK>
+				<VALUE>0x9E</VALUE>
+<TEXT> 外部晶振(3.0-16MHz);起动时间258 CK+64ms[CKSEL=1110 SUT=01]</TEXT>
+			</TEXT57>
+			<TEXT58>
+				<MASK>0xBF</MASK>
+				<VALUE>0xAE</VALUE>
+<TEXT> 外部晶振(3.0-16MHz);起动时间1k CK+0ms[CKSEL=1110 SUT=10]</TEXT>
+			</TEXT58>
+			<TEXT59>
+				<MASK>0xBF</MASK>
+				<VALUE>0xBE</VALUE>
+<TEXT> 外部晶振(3.0-16MHz);起动时间1k CK+64ms[CKSEL=1110 SUT=11]</TEXT>
+			</TEXT59>
+			<TEXT60>
+				<MASK>0xBF</MASK>
+				<VALUE>0x8F</VALUE>
+<TEXT> 外部晶振(3.0-16MHz);起动时间1k CK+64ms[CKSEL=1111 SUT=00]</TEXT>
+			</TEXT60>
+			<TEXT61>
+				<MASK>0xBF</MASK>
+				<VALUE>0x9F</VALUE>
+<TEXT> 外部晶振(3.0-16MHz);起动时间16k CK+0ms[CKSEL=1111 SUT=01]</TEXT>
+			</TEXT61>
+			<TEXT62>
+				<MASK>0xBF</MASK>
+				<VALUE>0xAF</VALUE>
+<TEXT> 外部晶振(3.0-16MHz);起动时间16k CK+4ms[CKSEL=1111 SUT=10]</TEXT>
+			</TEXT62>
+			<TEXT63>
+				<MASK>0xBF</MASK>
+				<VALUE>0xBF</VALUE>
+<TEXT> 外部晶振(3.0-16MHz);起动时间16k CK+64ms[CKSEL=1111 SUT=11]</TEXT>
+			</TEXT63>
+		</LOW>
+		<HIGH>
+			<NMB_FUSE_BITS>5</NMB_FUSE_BITS>
+			<FUSE4>
+				<NAME>RSTDISBL</NAME>
+				<TEXT>Select if PB/ is I/O pin or RESET pin</TEXT>
+				<DEFAULT>1</DEFAULT>
+			</FUSE4>
+			<FUSE3>
+				<NAME>SPIEN</NAME>
+				<TEXT>Enable Serial Program and Data Downloading</TEXT>
+				<DEFAULT>0</DEFAULT>
+			</FUSE3>
+			<FUSE2>
+				<NAME>EESAVE</NAME>
+				<TEXT>EEPROM memory is preserved through the Chip Erase</TEXT>
+				<DEFAULT>1</DEFAULT>
+			</FUSE2>
+			<FUSE1>
+				<NAME>BODLEVEL</NAME>
+				<TEXT>Brown out detector trigger level</TEXT>
+				<DEFAULT>1</DEFAULT>
+			</FUSE1>
+			<FUSE0>
+				<NAME>BODEN</NAME>
+				<TEXT>Brown out detector enable</TEXT>
+				<DEFAULT>1</DEFAULT>
+			</FUSE0>
+			<NMB_TEXT>6</NMB_TEXT>
+			<TEXT1>
+				<MASK>0x10</MASK>
+				<VALUE>0x00</VALUE>
+<TEXT> 禁用外部复位，PB7用作I/O口[RSTDISBL=0]</TEXT>
+			</TEXT1>
+			<TEXT2>
+				<MASK>0x08</MASK>
+				<VALUE>0x00</VALUE>
+<TEXT> 使能ISP编程[SPIEN=0]</TEXT>
+			</TEXT2>
+			<TEXT3>
+				<MASK>0x04</MASK>
+				<VALUE>0x00</VALUE>
+<TEXT> 执行芯片擦除时保留EEPROM的内容[EESAVE=0]</TEXT>
+			</TEXT3>
+			<TEXT4>
+				<MASK>0x02</MASK>
+				<VALUE>0x00</VALUE>
+<TEXT> 掉电检测电平为4.0V[BODLEVEL=0]</TEXT>
+			</TEXT4>
+			<TEXT5>
+				<MASK>0x02</MASK>
+				<VALUE>0x02</VALUE>
+<TEXT> 掉电检测电平为2.7V[BODLEVEL=1]</TEXT>
+			</TEXT5>
+			<TEXT6>
+				<MASK>0x01</MASK>
+				<VALUE>0x00</VALUE>
+<TEXT> 使能掉电检测[BODEN=0]</TEXT>
+			</TEXT6>
+		</HIGH>
+	</FUSE>
+	<LOCKBIT>
+<TEXT>无加密(没有使能存储器保护特性)[LB2=1 LB1=1]</TEXT>
+		<NMB_TEXT>3</NMB_TEXT>
+		<NMB_LOCK_BITS>2</NMB_LOCK_BITS>
+		<TEXT1>
+			<MASK>0x03</MASK>
+			<VALUE>0x03</VALUE>
+<TEXT>无加密(没有使能存储器保护特性)[LB2=1 LB1=1]</TEXT>
+		</TEXT1>
+		<TEXT2>
+			<MASK>0x03</MASK>
+			<VALUE>0x02</VALUE>
+<TEXT> 禁止进一步对Flash 和EEPROM 编程[LB2=1 LB1=0]</TEXT>
+		</TEXT2>
+		<TEXT3>
+			<MASK>0x03</MASK>
+			<VALUE>0x00</VALUE>
+<TEXT> 禁止进一步对Flash 和EEPROM 编程及验证[LB2=0 LB1=0]</TEXT>
+		</TEXT3>
+		<LOCKBIT0>
+			<NAME>LB1</NAME>
+			<TEXT>Lockbit</TEXT>
+		</LOCKBIT0>
+		<LOCKBIT1>
+			<NAME>LB2</NAME>
+			<TEXT>Lockbit</TEXT>
+		</LOCKBIT1>
+	</LOCKBIT>	
+	</CHINESE>
+</AVRPART>

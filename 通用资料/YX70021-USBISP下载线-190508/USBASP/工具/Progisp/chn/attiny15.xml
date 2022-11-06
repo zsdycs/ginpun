@@ -1,0 +1,81 @@
+<AVRPART>
+	<FUSE>
+		<LOW>
+			<NMB_TEXT>9</NMB_TEXT>
+			<NMB_FUSE_BITS>6</NMB_FUSE_BITS>
+			<TEXT1>
+				<MASK>0x80</MASK>
+				<VALUE>0x80</VALUE>
+				<TEXT>Brown-out detection level at VCC=2.7 V</TEXT>
+			</TEXT1>
+			<TEXT2>
+				<MASK>0x80</MASK>
+				<VALUE>0x00</VALUE>
+				<TEXT>Brown-out detection level at VCC=4.0 V</TEXT>
+			</TEXT2>
+			<TEXT3>
+				<MASK>0x40</MASK>
+				<VALUE>0x00</VALUE>
+				<TEXT>Brown-out detection enabled</TEXT>
+			</TEXT3>
+			<TEXT4>
+				<MASK>0x20</MASK>
+				<VALUE>0x00</VALUE>
+				<TEXT>Serial program downloading (SPI) enabled</TEXT>
+			</TEXT4>
+			<TEXT5>
+				<MASK>0x10</MASK>
+				<VALUE>0x00</VALUE>
+				<TEXT>External reset function of PB5 disabled</TEXT>
+			</TEXT5>
+			<TEXT6>
+				<MASK>0x03</MASK>
+				<VALUE>0x03</VALUE>
+				<TEXT>CKSEL=11 Very quickly rising power</TEXT>
+			</TEXT6>
+			<TEXT7>
+				<MASK>0x03</MASK>
+				<VALUE>0x02</VALUE>
+				<TEXT>CKSEL=10 Quickly rising power</TEXT>
+			</TEXT7>
+			<TEXT8>
+				<MASK>0x03</MASK>
+				<VALUE>0x01</VALUE>
+				<TEXT>CKSEL=01 Slowly rising power</TEXT>
+			</TEXT8>
+			<TEXT9>
+				<MASK>0x03</MASK>
+				<VALUE>0x00</VALUE>
+				<TEXT>CKSEL=00 Slowly rising power</TEXT>
+			</TEXT9>
+		</LOW>
+	</FUSE>
+	<LOCKBIT>
+<TEXT> 无加密(没有使能存储器保护特性)[LB2=1 LB1=1]</TEXT>
+		<NMB_TEXT>3</NMB_TEXT>
+		<NMB_LOCK_BITS>2</NMB_LOCK_BITS>
+		<TEXT1>
+			<MASK>0x06</MASK>
+			<VALUE>0x06</VALUE>
+<TEXT>无加密(没有使能存储器保护特性)[LB2=1 LB1=1]</TEXT>
+		</TEXT1>
+		<TEXT2>
+			<MASK>0x06</MASK>
+			<VALUE>0x04</VALUE>
+<TEXT> 禁止进一步对Flash 和EEPROM 编程[LB2=1 LB1=0]</TEXT>
+		</TEXT2>
+		<TEXT3>
+			<MASK>0x06</MASK>
+			<VALUE>0x00</VALUE>
+<TEXT> 禁止进一步对Flash 和EEPROM 编程及验证[LB2=0 LB1=0]</TEXT>
+		</TEXT3>
+		<LOCKBIT0>
+			<NAME>LB1</NAME>
+			<TEXT>Lockbit</TEXT>
+		</LOCKBIT0>
+		<LOCKBIT1>
+			<NAME>LB2</NAME>
+			<TEXT>Lockbit</TEXT>
+		</LOCKBIT1>
+	</LOCKBIT>
+</AVRPART>

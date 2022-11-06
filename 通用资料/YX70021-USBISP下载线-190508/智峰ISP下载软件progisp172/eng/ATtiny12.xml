@@ -1,0 +1,389 @@
+<AVRPART>
+  <ADMIN>
+    <PART_NAME>ATtiny13</PART_NAME>
+    <SPEED>16MHZ</SPEED>
+    <SIGNATURE>
+      <ADDR000>0x1E</ADDR000>
+      <ADDR001>0x90</ADDR001>
+      <ADDR002>0x05</ADDR002>
+    </SIGNATURE>  
+  </ADMIN>
+  <PROGRAMMING>
+    <ISPInterface>
+      <FuseWarning>0,0x20,0x20,WARNING! These fuse settings will disable the ISP interface!</FuseWarning>
+      <FuseWarning>0,0x10,0x00,WARNING! Disabling external reset will make the ISP interface inaccessible!</FuseWarning>
+    </ISPInterface>
+    <HVInterface>
+      <FuseWarning>0,0x20,0x20,WARNING! These fuse settings will disable the ISP interface!</FuseWarning>
+      <FuseWarning>0,0x10,0x00,WARNING! Disabling external reset will make the ISP interface inaccessible!</FuseWarning>
+    </HVInterface>    
+    <PRGISP>  
+        <ZIF_NO>2</ZIF_NO>   
+    </PRGISP>
+    <PRGHV>
+        <ZIF_NO>5</ZIF_NO>   
+    </PRGHV>
+    <TYPE>1</TYPE> 
+    <SUBCLASS>4</SUBCLASS> 
+    <OscCal>
+      <OCEntry>0x00,1.2 MHz</OCEntry>
+    </OscCal>
+    <PROG_FLASH>1024</PROG_FLASH>
+    <EEPROM>64</EEPROM>    
+    <FlashPageSize>0</FlashPageSize>
+    <EepromPageSize>0</EepromPageSize>
+    <WD_Flash>9</WD_Flash>
+    <WD_EEPROM>15</WD_EEPROM>
+    <WD_ERASE>50</WD_ERASE>
+    <WD_FUSE>9</WD_FUSE>
+    <WD_LOCK>9</WD_LOCK>
+    <WD_RESET>100</WD_RESET> 
+    <FuseRCMD0>0x50000000</FuseRCMD0>    
+    <FuseRPos>3</FuseRPos>    
+    <FuseWCMD0>0xac000000</FuseWCMD0>     
+    <FuseWPos>3</FuseWPos>    
+    <LockRCMD>0x58000000</LockRCMD>    
+    <LockRPos>3</LockRPos>    
+    <LockWCMD>0xac000000</LockWCMD>    
+    <LockWPos>1</LockWPos>  
+    <fusevalue>0x52</fusevalue>  
+    <FuseMask>0xff</FuseMask>        
+  </PROGRAMMING>
+	<FUSE>
+		<LOW>
+			<NMB_TEXT>21</NMB_TEXT>
+			<NMB_FUSE_BITS>8</NMB_FUSE_BITS>
+			<TEXT1>
+				<MASK>0x80</MASK>
+				<VALUE>0x80</VALUE>
+				<TEXT>Brown-out detection level at VCC=1.8 V</TEXT>
+			</TEXT1>
+			<TEXT2>
+				<MASK>0x80</MASK>
+				<VALUE>0x00</VALUE>
+				<TEXT>Brown-out detection level at VCC=2.7 V</TEXT>
+			</TEXT2>
+			<TEXT3>
+				<MASK>0x40</MASK>
+				<VALUE>0x00</VALUE>
+				<TEXT>Brown-out detection enabled</TEXT>
+			</TEXT3>
+			<TEXT4>
+				<MASK>0x20</MASK>
+				<VALUE>0x00</VALUE>
+				<TEXT>Serial program downloading (SPI) enabled</TEXT>
+			</TEXT4>
+			<TEXT5>
+				<MASK>0x10</MASK>
+				<VALUE>0x00</VALUE>
+				<TEXT>External reset function of PB5 disabled</TEXT>
+			</TEXT5>
+			<TEXT6>
+				<MASK>0x0F</MASK>
+				<VALUE>0x0F</VALUE>
+				<TEXT>CKSEL=1111 External Crystal / Ceramic Resonator</TEXT>
+			</TEXT6>
+			<TEXT7>
+				<MASK>0x0F</MASK>
+				<VALUE>0x0E</VALUE>
+				<TEXT>CKSEL=1110 External Crystal / Ceramic Resonator</TEXT>
+			</TEXT7>
+			<TEXT8>
+				<MASK>0x0F</MASK>
+				<VALUE>0x0D</VALUE>
+				<TEXT>CKSEL=1101 External Crystal / Ceramic Resonator</TEXT>
+			</TEXT8>
+			<TEXT9>
+				<MASK>0x0F</MASK>
+				<VALUE>0x0C</VALUE>
+				<TEXT>CKSEL=1100 External Crystal / Ceramic Resonator</TEXT>
+			</TEXT9>
+			<TEXT10>
+				<MASK>0x0F</MASK>
+				<VALUE>0x0B</VALUE>
+				<TEXT>CKSEL=1011 External Crystal / Ceramic Resonator</TEXT>
+			</TEXT10>
+			<TEXT11>
+				<MASK>0x0F</MASK>
+				<VALUE>0x0A</VALUE>
+				<TEXT>CKSEL=1010 External Crystal / Ceramic Resonator</TEXT>
+			</TEXT11>
+			<TEXT12>
+				<MASK>0x0F</MASK>
+				<VALUE>0x09</VALUE>
+				<TEXT>CKSEL=1001 External Low-Frequency Crystal</TEXT>
+			</TEXT12>
+			<TEXT13>
+				<MASK>0x0F</MASK>
+				<VALUE>0x08</VALUE>
+				<TEXT>CKSEL=1000 External Low-Frequency Crystal</TEXT>
+			</TEXT13>
+			<TEXT14>
+				<MASK>0x0F</MASK>
+				<VALUE>0x07</VALUE>
+				<TEXT>CKSEL=0111 External RC Ocsillator</TEXT>
+			</TEXT14>
+			<TEXT15>
+				<MASK>0x0F</MASK>
+				<VALUE>0x06</VALUE>
+				<TEXT>CKSEL=0110 External RC Ocsillator</TEXT>
+			</TEXT15>
+			<TEXT16>
+				<MASK>0x0F</MASK>
+				<VALUE>0x05</VALUE>
+				<TEXT>CKSEL=0101 External RC Ocsillator</TEXT>
+			</TEXT16>
+			<TEXT17>
+				<MASK>0x0F</MASK>
+				<VALUE>0x04</VALUE>
+				<TEXT>CKSEL=0100 Internal RC Ocsillator</TEXT>
+			</TEXT17>
+			<TEXT18>
+				<MASK>0x0F</MASK>
+				<VALUE>0x03</VALUE>
+				<TEXT>CKSEL=0011 Internal RC Ocsillator</TEXT>
+			</TEXT18>
+			<TEXT19>
+				<MASK>0x0F</MASK>
+				<VALUE>0x02</VALUE>
+				<TEXT>CKSEL=0010 Internal RC Ocsillator ; default value</TEXT>
+			</TEXT19>
+			<TEXT20>
+				<MASK>0x0F</MASK>
+				<VALUE>0x01</VALUE>
+				<TEXT>CKSEL=0001 External Clock</TEXT>
+			</TEXT20>
+			<TEXT21>
+				<MASK>0x0F</MASK>
+				<VALUE>0x00</VALUE>
+				<TEXT>CKSEL=0000 External Clock</TEXT>
+			</TEXT21>
+			<FUSE0>
+				<NAME>CKSEL0</NAME>
+				<DEFAULT>0</DEFAULT>
+			</FUSE0>
+			<FUSE1>
+				<NAME>CKSEL1</NAME>
+				<DEFAULT>1</DEFAULT>
+			</FUSE1>						
+			<FUSE2>
+				<NAME>CKSEL2</NAME>
+				<DEFAULT>0</DEFAULT>
+			</FUSE2>
+			<FUSE3>
+				<NAME>CKSEL3</NAME>
+				<DEFAULT>0</DEFAULT>
+			</FUSE3>						
+			<FUSE4>
+				<NAME>RSTDISBL</NAME>
+				<DEFAULT>1</DEFAULT>
+			</FUSE4>
+			<FUSE5>
+				<NAME>SPIEN</NAME>
+				<DEFAULT>0</DEFAULT>
+			</FUSE5>						
+			<FUSE6>
+				<NAME>BODEN</NAME>
+				<DEFAULT>1</DEFAULT>
+			</FUSE6>
+			<FUSE7>
+				<NAME>BODLEVEL</NAME>
+				<DEFAULT>0</DEFAULT>
+			</FUSE7>						
+		</LOW>
+	</FUSE>
+	<LOCKBIT>
+		<TEXT>[LB1 = 1 :  LB2 = 1] No memory lock features enabled. [LB1 = 0 :  LB2 = 1] Further programming of Flash and EEPROM is enabled. [LB1 = 0 :  LB2 = 0] Same as previous, but verify is also disabled</TEXT>
+		<NMB_TEXT>3</NMB_TEXT>
+		<NMB_LOCK_BITS>2</NMB_LOCK_BITS>
+		<TEXT1>
+			<MASK>0x06</MASK>
+			<VALUE>0x06</VALUE>
+			<TEXT>Mode 1: No memory lock features enabled</TEXT>
+		</TEXT1>
+		<TEXT2>
+			<MASK>0x06</MASK>
+			<VALUE>0x04</VALUE>
+			<TEXT>Mode 2: Further programming disabled</TEXT>
+		</TEXT2>
+		<TEXT3>
+			<MASK>0x06</MASK>
+			<VALUE>0x00</VALUE>
+			<TEXT>Mode 3: Further programming and verification disabled</TEXT>
+		</TEXT3>
+		<LOCKBIT1>
+			<NAME>LB1</NAME>
+			<TEXT>Lockbit</TEXT>
+		</LOCKBIT1>
+		<LOCKBIT2>
+			<NAME>LB2</NAME>
+			<TEXT>Lockbit</TEXT>
+		</LOCKBIT2>
+	</LOCKBIT>
+	<CHINESE>
+	<FUSE>
+		<LOW>
+			<NMB_TEXT>21</NMB_TEXT>
+			<NMB_FUSE_BITS>8</NMB_FUSE_BITS>
+			<TEXT1>
+				<MASK>0x80</MASK>
+				<VALUE>0x80</VALUE>
+				<TEXT>掉电检测电平为1.8V[BODLEVEL=0]</TEXT>
+			</TEXT1>
+			<TEXT2>
+				<MASK>0x80</MASK>
+				<VALUE>0x00</VALUE>
+				<TEXT>掉电检测电平为2.7V[BODLEVEL=1]</TEXT>
+			</TEXT2>
+			<TEXT3>
+				<MASK>0x40</MASK>
+				<VALUE>0x00</VALUE>
+				<TEXT>使能掉电检测[BODEN=0]</TEXT>
+			</TEXT3>
+			<TEXT4>
+				<MASK>0x20</MASK>
+				<VALUE>0x00</VALUE>
+				<TEXT>使能ISP编程[SPIEN=0]</TEXT>
+			</TEXT4>
+			<TEXT5>
+				<MASK>0x10</MASK>
+				<VALUE>0x00</VALUE>
+				<TEXT>禁用外部复位，PB5用作I/O口[RSTDISBL=0]</TEXT>
+			</TEXT5>
+			<TEXT6>
+				<MASK>0x0F</MASK>
+				<VALUE>0x0F</VALUE>
+				<TEXT>外部晶振;起动时间(1.8V/2.7V) 1K CK/1K CK(时钟周期);[CKSEL=1111]</TEXT>
+			</TEXT6>
+			<TEXT7>
+				<MASK>0x0F</MASK>
+				<VALUE>0x0E</VALUE>
+				<TEXT>外部晶振;起动时间(1.8V/2.7V) 1K CK+3.6ms/1K CK+4.2ms[CKSEL=1110]</TEXT>
+			</TEXT7>
+			<TEXT8>
+				<MASK>0x0F</MASK>
+				<VALUE>0x0D</VALUE>
+				<TEXT>外部晶振;起动时间(1.8V/2.7V) 1K CK+57ms/1K CK+67ms[CKSEL=1101]</TEXT>
+			</TEXT8>
+			<TEXT9>
+				<MASK>0x0F</MASK>
+				<VALUE>0x0C</VALUE>
+				<TEXT>外部晶振;起动时间(1.8V/2.7V) 16K CK/16K CK;[CKSEL=1100]</TEXT>
+			</TEXT9>
+			<TEXT10>
+				<MASK>0x0F</MASK>
+				<VALUE>0x0B</VALUE>
+				<TEXT>外部晶振;起动时间(1.8V/2.7V) 16 CK+3.6ms/16K CK+4.2ms[CKSEL=1011]</TEXT>
+			</TEXT10>
+			<TEXT11>
+				<MASK>0x0F</MASK>
+				<VALUE>0x0A</VALUE>
+				<TEXT>外部晶振;起动时间(1.8V/2.7V) 16K CK+57ms/16K CK+67ms[CKSEL=1010]</TEXT>
+			</TEXT11>
+			<TEXT12>
+				<MASK>0x0F</MASK>
+				<VALUE>0x09</VALUE>
+				<TEXT>外部低频晶振(32.768KHz);起动时间(1.8V/2.7V) 1K CK+57ms/1K CK+67ms[CKSEL=1001]</TEXT>
+			</TEXT12>
+			<TEXT13>
+				<MASK>0x0F</MASK>
+				<VALUE>0x08</VALUE>
+				<TEXT>外部低频晶振(32.768KHz);起动时间(1.8V/2.7V) 32K CK+57ms/32K CK+67ms[CKSEL=1000]</TEXT>
+			</TEXT13>
+			<TEXT14>
+				<MASK>0x0F</MASK>
+				<VALUE>0x07</VALUE>
+				<TEXT>外部RC振荡器;起动时间(1.8V/2.7V) 6K CK/6K CK;[CKSEL=0111]</TEXT>
+			</TEXT14>
+			<TEXT15>
+				<MASK>0x0F</MASK>
+				<VALUE>0x06</VALUE>
+				<TEXT>外部RC振荡器;起动时间(1.8V/2.7V) 6K CK+3.6ms/6K CK+4.2ms[CKSEL=0110]</TEXT>
+			</TEXT15>
+			<TEXT16>
+				<MASK>0x0F</MASK>
+				<VALUE>0x05</VALUE>
+				<TEXT>外部RC振荡器;起动时间(1.8V/2.7V) 6K CK+57ms/6K CK+67ms[CKSEL=0101]</TEXT>
+			</TEXT16>
+			<TEXT17>
+				<MASK>0x0F</MASK>
+				<VALUE>0x04</VALUE>
+				<TEXT>内部RC振荡器;起动时间(1.8V/2.7V) 6K CK/6K CK;[CKSEL=0100]</TEXT>
+			</TEXT17>
+			<TEXT18>
+				<MASK>0x0F</MASK>
+				<VALUE>0x03</VALUE>
+				<TEXT>内部RC振荡器;起动时间(1.8V/2.7V) 6K CK+3.6ms/6K CK+4.2ms[CKSEL=0011]</TEXT>
+			</TEXT18>
+			<TEXT19>
+				<MASK>0x0F</MASK>
+				<VALUE>0x02</VALUE>
+				<TEXT>内部RC振荡器;起动时间(1.8V/2.7V) 6K CK+57ms/6K CK+67ms[CKSEL=0010]</TEXT>
+			</TEXT19>
+			<TEXT20>
+				<MASK>0x0F</MASK>
+				<VALUE>0x01</VALUE>
+				<TEXT>外部时钟;起动时间(1.8V/2.7V) 6K CK/6K CK;[CKSEL=0001]</TEXT>
+			</TEXT20>
+			<TEXT21>
+				<MASK>0x0F</MASK>
+				<VALUE>0x00</VALUE>
+				<TEXT>外部时钟;起动时间(1.8V/2.7V) 6K CK+3.6ms/6K CK+4.2ms[CKSEL=0000]</TEXT>
+			</TEXT21>
+			<FUSE0>
+				<NAME>CKSEL0</NAME>
+			</FUSE0>
+			<FUSE1>
+				<NAME>CKSEL1</NAME>
+			</FUSE1>						
+			<FUSE2>
+				<NAME>CKSEL2</NAME>
+			</FUSE2>
+			<FUSE3>
+				<NAME>CKSEL3</NAME>
+			</FUSE3>						
+			<FUSE4>
+				<NAME>RSTDISBL</NAME>
+			</FUSE4>
+			<FUSE5>
+				<NAME>SPIEN</NAME>
+			</FUSE5>						
+			<FUSE6>
+				<NAME>BODEN</NAME>
+			</FUSE6>
+			<FUSE7>
+				<NAME>BODLEVEL</NAME>
+			</FUSE7>								
+		</LOW>
+
+	</FUSE>
+	<LOCKBIT>
+		<TEXT>[LB1 = 1 :  LB2 = 1] No memory lock features enabled. [LB1 = 0 :  LB2 = 1] Further programming of Flash and EEPROM is enabled. [LB1 = 0 :  LB2 = 0] Same as previous, but verify is also disabled</TEXT>
+		<NMB_TEXT>3</NMB_TEXT>
+		<NMB_LOCK_BITS>2</NMB_LOCK_BITS>
+		<TEXT1>
+			<MASK>0x06</MASK>
+			<VALUE>0x06</VALUE>
+			<TEXT>Mode 1: 无加密(没有使能存储器保护特性)[LB2=1 LB1=1]</TEXT>
+		</TEXT1>
+		<TEXT2>
+			<MASK>0x06</MASK>
+			<VALUE>0x04</VALUE>
+			<TEXT>Mode 2: 禁止进一步对Flash 和EEPROM 编程[LB2=1 LB1=0]</TEXT>
+		</TEXT2>
+		<TEXT3>
+			<MASK>0x06</MASK>
+			<VALUE>0x00</VALUE>
+			<TEXT>Mode 3: 禁止进一步对Flash 和EEPROM 编程及验证[LB2=0 LB1=0]</TEXT>
+		</TEXT3>
+		<LOCKBIT1>
+			<NAME>LB1</NAME>
+			<TEXT>Lockbit</TEXT>
+		</LOCKBIT1>
+		<LOCKBIT2>
+			<NAME>LB2</NAME>
+			<TEXT>Lockbit</TEXT>
+		</LOCKBIT2>
+	</LOCKBIT>	
+	</CHINESE>
+</AVRPART>

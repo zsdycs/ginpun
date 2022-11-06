@@ -1,0 +1,24 @@
+<AVRPART>  
+  <ADMIN>
+    <PART_NAME>EN25F80</PART_NAME>  
+    <SIGNATURE>
+      <ADDR000>0x1C</ADDR000>
+      <ADDR001>0x31</ADDR001>
+      <ADDR002>0x14</ADDR002>
+    </SIGNATURE>  
+  </ADMIN>
+  <PROGRAMMING>
+    <PRGISP>  
+        <ZIF_NO>2</ZIF_NO>   
+    </PRGISP>
+    <PRGHV>
+        <ZIF_NO>5</ZIF_NO>   
+    </PRGHV>
+    <TYPE>4</TYPE> 
+    <SUBCLASS>0</SUBCLASS> 
+    <PROG_FLASH>262144</PROG_FLASH>
+    <FlashPageSize>256</FlashPageSize>
+    <WD_ERASE>2000</WD_ERASE>
+    <WD_Flash>9</WD_Flash>
+  </PROGRAMMING>
+</AVRPART>  

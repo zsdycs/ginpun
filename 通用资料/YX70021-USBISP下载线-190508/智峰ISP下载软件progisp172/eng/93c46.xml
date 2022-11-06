@@ -1,0 +1,19 @@
+<AVRPART>  
+  <ADMIN>
+    <PART_NAME>93C46</PART_NAME>
+  </ADMIN>
+  <PROGRAMMING>
+    <PRGISP>  
+        <ZIF_NO>2</ZIF_NO>   
+    </PRGISP>
+    <PRGHV>
+        <ZIF_NO>1</ZIF_NO>   
+    </PRGHV>
+    <TYPE>7</TYPE> 
+    <SUBCLASS>7</SUBCLASS> 
+    <PROG_FLASH>128</PROG_FLASH>
+    <FlashPageSize>16</FlashPageSize>
+    <WD_Flash>9</WD_Flash>
+    <WD_ERASE>50</WD_ERASE>
+  </PROGRAMMING>
+</AVRPART>  

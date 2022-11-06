@@ -1,0 +1,580 @@
+<AVRPART>
+  <ADMIN>
+    <PART_NAME>ATtiny167</PART_NAME>
+    <SPEED>16MHZ</SPEED>
+    <BUILD>1</BUILD>
+    <RELEASE_STATUS>RELEASED</RELEASE_STATUS>
+    <SIGNATURE>
+      <ADDR000>$1E</ADDR000>
+      <ADDR001>$94</ADDR001>
+      <ADDR002>$87</ADDR002>
+    </SIGNATURE>
+  </ADMIN>
+  <FUSE>
+    <LIST>[LOW:HIGH:EXTENDED]</LIST>
+    <ICON/>
+    <ID/>
+    <TEXT/>
+    <LOW>
+      <NMB_TEXT>46</NMB_TEXT>
+      <NMB_FUSE_BITS>8</NMB_FUSE_BITS>
+      <TEXT1>
+        <MASK>0x80</MASK>
+        <VALUE>0x00</VALUE>
+        <TEXT>Divide clock by 8 internally; [CKDIV8=0]</TEXT>
+      </TEXT1>
+      <TEXT2>
+        <MASK>0x40</MASK>
+        <VALUE>0x00</VALUE>
+        <TEXT>Clock output on PORTB5; [CKOUT=0]</TEXT>
+      </TEXT2>
+      <TEXT3>
+        <MASK>0x3F</MASK>
+        <VALUE>0x00</VALUE>
+        <TEXT>Ext. Clock - XTAL1; Start-up time PWRDWN/RESET: 6 CK/14 CK + 0 ms;   [CKSEL=0000 SUT=00]</TEXT>
+      </TEXT3>
+      <TEXT4>
+        <MASK>0x3F</MASK>
+        <VALUE>0x10</VALUE>
+        <TEXT>Ext. Clock - XTAL1; Start-up time PWRDWN/RESET: 6 CK/14 CK + 4 ms; [CKSEL=0000 SUT=01]</TEXT>
+      </TEXT4>
+      <TEXT5>
+        <MASK>0x3F</MASK>
+        <VALUE>0x20</VALUE>
+        <TEXT>Ext. Clock - XTAL1; Start-up time PWRDWN/RESET: 6 CK/14 CK + 64 ms;  [CKSEL=0000 SUT=10]</TEXT>
+      </TEXT5>
+      <TEXT6>
+        <MASK>0x3F</MASK>
+        <VALUE>0x02</VALUE>
+        <TEXT>Int. RC Osc. 8 MHz; Start-up time PWRDWN/RESET: 6 CK/14 CK + 0 ms; [CKSEL=0010 SUT=00]</TEXT>
+      </TEXT6>
+      <TEXT7>
+        <MASK>0x3F</MASK>
+        <VALUE>0x12</VALUE>
+        <TEXT>Int. RC Osc. 8 MHz; Start-up time PWRDWN/RESET: 6 CK/14 CK + 4 ms; [CKSEL=0010 SUT=01]</TEXT>
+      </TEXT7>
+      <TEXT8>
+        <MASK>0x3F</MASK>
+        <VALUE>0x22</VALUE>
+        <TEXT>Int. RC Osc. 8 MHz; Start-up time PWRDWN/RESET: 6 CK/14 CK + 64 ms; [CKSEL=0010 SUT=10]; default value</TEXT>
+      </TEXT8>
+      <TEXT9>
+        <MASK>0x3F</MASK>
+        <VALUE>0x03</VALUE>
+        <TEXT>WD. Osc. 128 kHz; Start-up time PWRDWN/RESET: 6 CK/14 CK + 0 ms; [CKSEL=0011 SUT=00]</TEXT>
+      </TEXT9>
+      <TEXT10>
+        <MASK>0x3F</MASK>
+        <VALUE>0x13</VALUE>
+        <TEXT>WD. Osc. 128 kHz; Start-up time PWRDWN/RESET: 6 CK/14 CK + 4 ms; [CKSEL=0011 SUT=01]</TEXT>
+      </TEXT10>
+      <TEXT11>
+        <MASK>0x3F</MASK>
+        <VALUE>0x23</VALUE>
+        <TEXT>WD. Osc. 128 kHz; Start-up time PWRDWN/RESET: 6 CK/14 CK + 64 ms; [CKSEL=0011 SUT=10]</TEXT>
+      </TEXT11>
+      <TEXT12>
+        <MASK>0x3F</MASK>
+        <VALUE>0x04</VALUE>
+        <TEXT>Ext. Low-Freq. Crystal; Start-up time PWRDWN/RESET: 1024 CK 4 ms; [CKSEL=0100 SUT=00]</TEXT>
+      </TEXT12>
+      <TEXT13>
+        <MASK>0x3F</MASK>
+        <VALUE>0x14</VALUE>
+        <TEXT>Ext. Low-Freq. Crystal; Start-up time PWRDWN/RESET: 1024 CK + 64 ms; [CKSEL=0100 SUT=01]</TEXT>
+      </TEXT13>
+      <TEXT14>
+        <MASK>0x3F</MASK>
+        <VALUE>0x24</VALUE>
+        <TEXT>Ext. Low-Freq. Crystal; Start-up time PWRDWN/RESET: 32768 CK + 64 ms; [CKSEL=0100 SUT=10]</TEXT>
+      </TEXT14>
+      <TEXT15>
+        <MASK>0x3F</MASK>
+        <VALUE>0x08</VALUE>
+        <TEXT>Ext. Ceramic Res.; Frequency 0.4-0.9 MHz; Start-up time PWRDWN/RESET: 258 CK/14 CK + 4.1 ms; [CKSEL=1000 SUT=00]   </TEXT>
+      </TEXT15>
+      <TEXT16>
+        <MASK>0x3F</MASK>
+        <VALUE>0x18</VALUE>
+        <TEXT>Ext. Ceramic Res.; Frequency 0.4-0.9 MHz; Start-up time PWRDWN/RESET: 258 CK/14 CK + 65 ms;  [CKSEL=1000 SUT=01]   </TEXT>
+      </TEXT16>
+      <TEXT17>
+        <MASK>0x3F</MASK>
+        <VALUE>0x28</VALUE>
+        <TEXT>Ext. Ceramic Res.; Frequency 0.4-0.9 MHz; Start-up time PWRDWN/RESET: 1024 CK /14 CK + 0 ms;   [CKSEL=1000 SUT=10]   </TEXT>
+      </TEXT17>
+      <TEXT18>
+        <MASK>0x3F</MASK>
+        <VALUE>0x38</VALUE>
+        <TEXT>Ext. Ceramic Res.; Frequency 0.4-0.9 MHz; Start-up time PWRDWN/RESET: 1024 CK /14 CK + 4.1 ms; [CKSEL=1000 SUT=11]   </TEXT>
+      </TEXT18>
+      <TEXT19>
+        <MASK>0x3F</MASK>
+        <VALUE>0x09</VALUE>
+        <TEXT>Ext. Ceramic Res.; Frequency 0.4-0.9 MHz; Start-up time PWRDWN/RESET: 1024 CK /14 CK + 65 ms;  [CKSEL=1001 SUT=00]   </TEXT>
+      </TEXT19>
+      <TEXT20>
+        <MASK>0x3F</MASK>
+        <VALUE>0x19</VALUE>
+        <TEXT>Ext. Crystal Osc.; Frequency 0.4-0.9 MHz; Start-up time PWRDWN/RESET: 16384 CK/14 CK + 0 ms;   [CKSEL=1001 SUT=01]   </TEXT>
+      </TEXT20>
+      <TEXT21>
+        <MASK>0x3F</MASK>
+        <VALUE>0x29</VALUE>
+        <TEXT>Ext. Crystal Osc.; Frequency 0.4-0.9 MHz; Start-up time PWRDWN/RESET: 16384 CK/14 CK + 4.1 ms; [CKSEL=1001 SUT=10]   </TEXT>
+      </TEXT21>
+      <TEXT22>
+        <MASK>0x3F</MASK>
+        <VALUE>0x39</VALUE>
+        <TEXT>Ext. Crystal Osc.; Frequency 0.4-0.9 MHz; Start-up time PWRDWN/RESET: 16384 CK/14 CK + 65 ms;  [CKSEL=1001 SUT=11]   </TEXT>
+      </TEXT22>
+      <TEXT23>
+        <MASK>0x3F</MASK>
+        <VALUE>0x0A</VALUE>
+        <TEXT>Ext. Ceramic Res.; Frequency 0.9-3.0 MHz; Start-up time PWRDWN/RESET: 258 CK/14 CK + 4.1 ms; [CKSEL=1010 SUT=00]   </TEXT>
+      </TEXT23>
+      <TEXT24>
+        <MASK>0x3F</MASK>
+        <VALUE>0x1A</VALUE>
+        <TEXT>Ext. Ceramic Res.; Frequency 0.9-3.0 MHz; Start-up time PWRDWN/RESET: 258 CK/14 CK + 65 ms;  [CKSEL=1010 SUT=01]   </TEXT>
+      </TEXT24>
+      <TEXT25>
+        <MASK>0x3F</MASK>
+        <VALUE>0x2A</VALUE>
+        <TEXT>Ext. Ceramic Res.; Frequency 0.9-3.0 MHz; Start-up time PWRDWN/RESET: 1024 CK /14 CK + 0 ms;   [CKSEL=1010 SUT=10]   </TEXT>
+      </TEXT25>
+      <TEXT26>
+        <MASK>0x3F</MASK>
+        <VALUE>0x3A</VALUE>
+        <TEXT>Ext. Ceramic Res.; Frequency 0.9-3.0 MHz; Start-up time PWRDWN/RESET: 1024 CK /14 CK + 4.1 ms; [CKSEL=1010 SUT=11]   </TEXT>
+      </TEXT26>
+      <TEXT27>
+        <MASK>0x3F</MASK>
+        <VALUE>0x0B</VALUE>
+        <TEXT>Ext. Ceramic Res.; Frequency 0.9-3.0 MHz; Start-up time PWRDWN/RESET: 1024 CK /14 CK + 65 ms;  [CKSEL=1011 SUT=00]   </TEXT>
+      </TEXT27>
+      <TEXT28>
+        <MASK>0x3F</MASK>
+        <VALUE>0x1B</VALUE>
+        <TEXT>Ext. Crystal Osc.; Frequency 0.9-3.0 MHz; Start-up time PWRDWN/RESET: 16384 CK/14 CK + 0 ms;   [CKSEL=1011 SUT=01]   </TEXT>
+      </TEXT28>
+      <TEXT29>
+        <MASK>0x3F</MASK>
+        <VALUE>0x2B</VALUE>
+        <TEXT>Ext. Crystal Osc.; Frequency 0.9-3.0 MHz; Start-up time PWRDWN/RESET: 16384 CK/14 CK + 4.1 ms; [CKSEL=1011 SUT=10]   </TEXT>
+      </TEXT29>
+      <TEXT30>
+        <MASK>0x3F</MASK>
+        <VALUE>0x3B</VALUE>
+        <TEXT>Ext. Crystal Osc.; Frequency 0.9-3.0 MHz; Start-up time PWRDWN/RESET: 16384 CK/14 CK + 65 ms;  [CKSEL=1011 SUT=11]   </TEXT>
+      </TEXT30>
+      <TEXT31>
+        <MASK>0x3F</MASK>
+        <VALUE>0x0C</VALUE>
+        <TEXT>Ext. Ceramic Res.; Frequency 3.0-8.0 MHz; Start-up time PWRDWN/RESET: 258 CK/14 CK + 4.1 ms; [CKSEL=1100 SUT=00]   </TEXT>
+      </TEXT31>
+      <TEXT32>
+        <MASK>0x3F</MASK>
+        <VALUE>0x1C</VALUE>
+        <TEXT>Ext. Ceramic Res.; Frequency 3.0-8.0 MHz; Start-up time PWRDWN/RESET: 258 CK/14 CK + 65 ms;  [CKSEL=1100 SUT=01]   </TEXT>
+      </TEXT32>
+      <TEXT33>
+        <MASK>0x3F</MASK>
+        <VALUE>0x2C</VALUE>
+        <TEXT>Ext. Ceramic Res.; Frequency 3.0-8.0 MHz; Start-up time PWRDWN/RESET: 1024 CK /14 CK + 0 ms;   [CKSEL=1100 SUT=10]   </TEXT>
+      </TEXT33>
+      <TEXT34>
+        <MASK>0x3F</MASK>
+        <VALUE>0x3C</VALUE>
+        <TEXT>Ext. Ceramic Res.; Frequency 3.0-8.0 MHz; Start-up time PWRDWN/RESET: 1024 CK /14 CK + 4.1 ms; [CKSEL=1100 SUT=11]   </TEXT>
+      </TEXT34>
+      <TEXT35>
+        <MASK>0x3F</MASK>
+        <VALUE>0x0D</VALUE>
+        <TEXT>Ext. Ceramic Res.; Frequency 3.0-8.0 MHz; Start-up time PWRDWN/RESET: 1024 CK /14 CK + 65 ms;  [CKSEL=1101 SUT=00]   </TEXT>
+      </TEXT35>
+      <TEXT36>
+        <MASK>0x3F</MASK>
+        <VALUE>0x1D</VALUE>
+        <TEXT>Ext. Crystal Osc.; Frequency 3.0-8.0 MHz; Start-up time PWRDWN/RESET: 16384 CK/14 CK + 0 ms;   [CKSEL=1101 SUT=01]   </TEXT>
+      </TEXT36>
+      <TEXT37>
+        <MASK>0x3F</MASK>
+        <VALUE>0x2D</VALUE>
+        <TEXT>Ext. Crystal Osc.; Frequency 3.0-8.0 MHz; Start-up time PWRDWN/RESET: 16384 CK/14 CK + 4.1 ms; [CKSEL=1101 SUT=10]   </TEXT>
+      </TEXT37>
+      <TEXT38>
+        <MASK>0x3F</MASK>
+        <VALUE>0x3D</VALUE>
+        <TEXT>Ext. Crystal Osc.; Frequency 3.0-8.0 MHz; Start-up time PWRDWN/RESET: 16384 CK/14 CK + 65 ms;  [CKSEL=1101 SUT=11]   </TEXT>
+      </TEXT38>
+      <TEXT39>
+        <MASK>0x3F</MASK>
+        <VALUE>0x0E</VALUE>
+        <TEXT>Ext. Ceramic Res.; Frequency 8.0-16.0 MHz; Start-up time PWRDWN/RESET: 258 CK/14 CK + 4.1 ms; [CKSEL=1110 SUT=00]   </TEXT>
+      </TEXT39>
+      <TEXT40>
+        <MASK>0x3F</MASK>
+        <VALUE>0x1E</VALUE>
+        <TEXT>Ext. Ceramic Res.; Frequency 8.0-16.0 MHz; Start-up time PWRDWN/RESET: 258 CK/14 CK + 65 ms;  [CKSEL=1110 SUT=01]   </TEXT>
+      </TEXT40>
+      <TEXT41>
+        <MASK>0x3F</MASK>
+        <VALUE>0x2E</VALUE>
+        <TEXT>Ext. Ceramic Res.; Frequency 8.0-16.0 MHz; Start-up time PWRDWN/RESET: 1024 CK /14 CK + 0 ms;   [CKSEL=1110 SUT=10]   </TEXT>
+      </TEXT41>
+      <TEXT42>
+        <MASK>0x3F</MASK>
+        <VALUE>0x3E</VALUE>
+        <TEXT>Ext. Ceramic Res.; Frequency 8.0-16.0 MHz; Start-up time PWRDWN/RESET: 1024 CK /14 CK + 4.1 ms; [CKSEL=1110 SUT=11]   </TEXT>
+      </TEXT42>
+      <TEXT43>
+        <MASK>0x3F</MASK>
+        <VALUE>0x0F</VALUE>
+        <TEXT>Ext. Ceramic Res.; Frequency 8.0-16.0 MHz; Start-up time PWRDWN/RESET: 1024 CK /14 CK + 65 ms;  [CKSEL=1111 SUT=00]   </TEXT>
+      </TEXT43>
+      <TEXT44>
+        <MASK>0x3F</MASK>
+        <VALUE>0x1F</VALUE>
+        <TEXT>Ext. Crystal Osc.; Frequency 8.0-16.0 MHz; Start-up time PWRDWN/RESET: 16384 CK/14 CK + 0 ms;   [CKSEL=1111 SUT=01]   </TEXT>
+      </TEXT44>
+      <TEXT45>
+        <MASK>0x3F</MASK>
+        <VALUE>0x2F</VALUE>
+        <TEXT>Ext. Crystal Osc.; Frequency 8.0-16.0 MHz; Start-up time PWRDWN/RESET: 16384 CK/14 CK + 4.1 ms; [CKSEL=1111 SUT=10]   </TEXT>
+      </TEXT45>
+      <TEXT46>
+        <MASK>0x3F</MASK>
+        <VALUE>0x3F</VALUE>
+        <TEXT>Ext. Crystal Osc.; Frequency 8.0-16.0 MHz; Start-up time PWRDWN/RESET: 16384 CK/14 CK + 65 ms;  [CKSEL=1111 SUT=11]   </TEXT>
+      </TEXT46>
+      <FUSE0>
+        <NAME>CKSEL0</NAME>
+        <TEXT>Select Clock source</TEXT>
+        <DEFAULT>0</DEFAULT>
+      </FUSE0>
+      <FUSE1>
+        <NAME>CKSEL1</NAME>
+        <TEXT>Select Clock source</TEXT>
+        <DEFAULT>1</DEFAULT>
+      </FUSE1>
+      <FUSE2>
+        <NAME>CKSEL2</NAME>
+        <TEXT>Select Clock source</TEXT>
+        <DEFAULT>0</DEFAULT>
+      </FUSE2>
+      <FUSE3>
+        <NAME>CKSEL3</NAME>
+        <TEXT>Select Clock source</TEXT>
+        <DEFAULT>0</DEFAULT>
+      </FUSE3>
+      <FUSE4>
+        <NAME>SUT0</NAME>
+        <TEXT>Select start-up time</TEXT>
+        <DEFAULT>0</DEFAULT>
+      </FUSE4>
+      <FUSE5>
+        <NAME>SUT1</NAME>
+        <TEXT>Select start-up time</TEXT>
+        <DEFAULT>1</DEFAULT>
+      </FUSE5>
+      <FUSE6>
+        <NAME>CKOUT</NAME>
+        <TEXT>Clock Output Enable</TEXT>
+        <DEFAULT>1</DEFAULT>
+      </FUSE6>
+      <FUSE7>
+        <NAME>CKDIV8</NAME>
+        <TEXT>Divide clock by 8</TEXT>
+        <DEFAULT>0</DEFAULT>
+      </FUSE7>
+    </LOW>
+    <HIGH>
+      <NMB_TEXT>13</NMB_TEXT>
+      <NMB_FUSE_BITS>8</NMB_FUSE_BITS>
+      <TEXT1>
+        <MASK>0x80</MASK>
+        <VALUE>0x00</VALUE>
+        <TEXT>Reset Disabled (Enable PB7 as i/o pin); [RSTDISBL=0]</TEXT>
+      </TEXT1>
+      <TEXT2>
+        <MASK>0x40</MASK>
+        <VALUE>0x00</VALUE>
+        <TEXT>Debug Wire enable; [DWEN=0]</TEXT>
+      </TEXT2>
+      <TEXT3>
+        <MASK>0x20</MASK>
+        <VALUE>0x00</VALUE>
+        <TEXT>Serial program downloading (SPI) enabled; [SPIEN=0]</TEXT>
+      </TEXT3>
+      <TEXT4>
+        <MASK>0x10</MASK>
+        <VALUE>0x00</VALUE>
+        <TEXT>Watch-dog Timer always ON; [WDTON=0]</TEXT>
+      </TEXT4>
+      <TEXT5>
+        <MASK>0x08</MASK>
+        <VALUE>0x00</VALUE>
+        <TEXT>Preserve EEPROM memory through the Chip Erase cycle; [EESAVE=0]</TEXT>
+      </TEXT5>
+      <TEXT6>
+        <MASK>0x07</MASK>
+        <VALUE>0x04</VALUE>
+        <TEXT>Brown-out detection level at VCC=4.3 V; [BODLEVEL=100] </TEXT>
+      </TEXT6>
+      <TEXT7>
+        <MASK>0x07</MASK>
+        <VALUE>0x05</VALUE>
+        <TEXT>Brown-out detection level at VCC=2.7 V; [BODLEVEL=101] </TEXT>
+      </TEXT7>
+      <TEXT8>
+        <MASK>0x07</MASK>
+        <VALUE>0x06</VALUE>
+        <TEXT>Brown-out detection level at VCC=1.8 V; [BODLEVEL=110] </TEXT>
+      </TEXT8>
+      <TEXT9>
+        <MASK>0x07</MASK>
+        <VALUE>0x03</VALUE>
+        <TEXT>Brown-out detection level at VCC=2.3 V; [BODLEVEL=011] </TEXT>
+      </TEXT9>
+      <TEXT10>
+        <MASK>0x07</MASK>
+        <VALUE>0x02</VALUE>
+        <TEXT>Brown-out detection level at VCC=2.2 V; [BODLEVEL=010] </TEXT>
+      </TEXT10>
+      <TEXT11>
+        <MASK>0x07</MASK>
+        <VALUE>0x01</VALUE>
+        <TEXT>Brown-out detection level at VCC=1.9 V; [BODLEVEL=001] </TEXT>
+      </TEXT11>
+      <TEXT12>
+        <MASK>0x07</MASK>
+        <VALUE>0x00</VALUE>
+        <TEXT>Brown-out detection level at VCC=2.0 V; [BODLEVEL=000] </TEXT>
+      </TEXT12>
+      <TEXT13>
+        <MASK>0x07</MASK>
+        <VALUE>0x07</VALUE>
+        <TEXT>Brown-out detection disabled; [BODLEVEL=111]                              </TEXT>
+      </TEXT13>
+      <FUSE0>
+        <NAME>BODLEVEL0</NAME>
+        <TEXT>Brown-out Detector trigger level</TEXT>
+        <DEFAULT>1</DEFAULT>
+      </FUSE0>
+      <FUSE1>
+        <NAME>BODLEVEL1</NAME>
+        <TEXT>Brown-out Detector trigger level</TEXT>
+        <DEFAULT>1</DEFAULT>
+      </FUSE1>
+      <FUSE2>
+        <NAME>BODLEVEL2</NAME>
+        <TEXT>Brown-out Detector trigger level</TEXT>
+        <DEFAULT>1</DEFAULT>
+      </FUSE2>
+      <FUSE3>
+        <NAME>EESAVE</NAME>
+        <TEXT>EEPROM memory is preserved through the Chip Erase</TEXT>
+        <DEFAULT>1</DEFAULT>
+      </FUSE3>
+      <FUSE4>
+        <NAME>WDTON</NAME>
+        <TEXT>Watchdog Timer always ON</TEXT>
+        <DEFAULT>1</DEFAULT>
+      </FUSE4>
+      <FUSE5>
+        <NAME>SPIEN</NAME>
+        <TEXT>Enable Serial Program and Data Downloading</TEXT>
+        <DEFAULT>0</DEFAULT>
+      </FUSE5>
+      <FUSE6>
+        <NAME>DWEN</NAME>
+        <TEXT>DebugWIRE Enable</TEXT>
+        <DEFAULT>1</DEFAULT>
+      </FUSE6>
+      <FUSE7>
+        <NAME>RSTDISBL</NAME>
+        <TEXT>External Reset disable</TEXT>
+        <DEFAULT>1</DEFAULT>
+      </FUSE7>
+    </HIGH>
+    <EXTENDED>
+      <FUSE0>
+        <NAME>SELFPRGEN</NAME>
+        <TEXT>Self-Programming Enable</TEXT>
+        <DEFAULT>1</DEFAULT>
+      </FUSE0>
+      <NMB_TEXT>1</NMB_TEXT>
+      <NMB_FUSE_BITS>1</NMB_FUSE_BITS>
+      <TEXT1>
+        <MASK>0x01</MASK>
+        <VALUE>0x00</VALUE>
+        <TEXT>Self Programming enable; [SELFPRGEN=0]</TEXT>
+      </TEXT1>
+    </EXTENDED>
+  </FUSE>
+  <LOCKBIT>
+    <ICON/>
+    <ID/>
+    <TEXT>[LB1 = 1 :  LB2 = 1] No memory lock features enabled. [LB1 = 0 :  LB2 = 1] Further programming of Flash and EEPROM is enabled. [LB1 = 0 :  LB2 = 0] Same as previous, but verify is also disabled</TEXT>
+    <NMB_TEXT>3</NMB_TEXT>
+    <NMB_LOCK_BITS>2</NMB_LOCK_BITS>
+    <TEXT1>
+      <MASK>0x03</MASK>
+      <VALUE>0x03</VALUE>
+      <TEXT>Mode 1: No memory lock features enabled</TEXT>
+    </TEXT1>
+    <TEXT2>
+      <MASK>0x03</MASK>
+      <VALUE>0x02</VALUE>
+      <TEXT>Mode 2: Further programming disabled</TEXT>
+    </TEXT2>
+    <TEXT3>
+      <MASK>0x03</MASK>
+      <VALUE>0x00</VALUE>
+      <TEXT>Mode 3: Further programming and verification disabled</TEXT>
+    </TEXT3>
+    <LOCKBIT0>
+      <NAME>LB1</NAME>
+      <TEXT>Lockbit</TEXT>
+    </LOCKBIT0>
+    <LOCKBIT1>
+      <NAME>LB2</NAME>
+      <TEXT>Lockbit</TEXT>
+    </LOCKBIT1>
+  </LOCKBIT>
+  <PACKAGE>
+    <PACKAGES>[SOIC]</PACKAGES>
+    <PDIP>
+      <NMB_PIN>20</NMB_PIN>
+      <PIN1>
+        <NAME>[RXLIN:RXD:ADC0:PCINT0:PA0]</NAME>
+        <TEXT>RXLIN (LIN Receive Pin). RXD (UART Receive Pin). ADC0 (ADC Input Channel 0). PCINT0 (Pin Change Interrupt 0). PORTA0.</TEXT>
+      </PIN1>
+      <PIN2>
+        <NAME>[TXLIN:TXD:ADC1:PCINT1:PA1]</NAME>
+        <TEXT>TXLIN (LIN Transmit Pin). RXD (UART Receive Pin). ADC0 (ADC Input Channel 0). PCINT0 (Pin Change Interrupt 0). PORTA1.</TEXT>
+      </PIN2>
+      <PIN3>
+        <NAME>[MISO:DO:OC0A:ADC2:PCINT2:PA2]</NAME>
+        <TEXT>MISO (SPI Master Input / Slave Output). DO (Three-wire Mode USI Alternate Data Output). OC0A (Output Compare and PWM Output A for Timer/Counter0). ADC2 (ADC Input Channel 2). PCINT2 (Pin Change Interrupt 2). PORTA2.</TEXT>
+      </PIN3>
+      <PIN4>
+        <NAME>[INT1:ISRC:ADC3:PCINT3:PA3]</NAME>
+        <TEXT>INT1 (External Interrupt1 Input). ISRC (Current Source Pin). ADC3 (ADC Input Channel 3). PCINT3 (Pin Change Interrupt 3). PORTA3.</TEXT>
+      </PIN4>
+      <PIN5>
+        <NAME>[AVCC]</NAME>
+        <TEXT>Analog Supply Voltage.</TEXT>
+      </PIN5>
+      <PIN6>
+        <NAME>[AGND]</NAME>
+        <TEXT>Analog Ground.</TEXT>
+      </PIN6>
+      <PIN7>
+        <NAME>[MOSI:SDA:DI:ICP1:ADC4:PCINT4:PA4]</NAME>
+        <TEXT>MOSI (SPI Master Output / Slave Input). SDA (Two-wire Mode USI Alternate Data Input / Output). DI (Three-wire Mode USI Alternate Data Input).ICP1 (Timer/Counter1 Input Capture Trigger). ADC4 (ADC Input Channel 4). PCINT4 (Pin Change Interrupt 4). PORTA4.</TEXT>
+      </PIN7>
+      <PIN8>
+        <NAME>[SCK:SCL:USCK:T1:ADC5:PCINT5:PA5]</NAME>
+        <TEXT>SCK (SPI Master Clock). SCL (Two-wire Mode USI Alternate Clock Input). USCK (Three-wire Mode USI Alternate Clock Input). T1 (Timer/Counter1 Clock Input). ADC5 (ADC Input Channel 5). PCINT5 (Pin Change Interrupt 5). PORTA5.</TEXT>
+      </PIN8>
+      <PIN9>
+        <NAME>[SS:AIN0:ADC6:PCINT6:PA6]</NAME>
+        <TEXT>SS (Active Low SPI Slave Select Input). AIN0 (Analog Comparator Negative Input). ADC6 (ADC Input Channel 6). PCINT6 (Pin Change Interrupt 6). PORTA6.</TEXT>
+      </PIN9>
+      <PIN10>
+        <NAME>[AREF:XREF:AIN1:ADC7:PCINT7:PA7]</NAME>
+        <TEXT>AREF (External Voltage Reference Input). XREF (Internal Voltage Reference Output). AIN1 (Analog Comparator Positive Input). ADC7 (ADC Input Channel 7). PCINT7 (Pin Change Interrupt 7). PORTA7.</TEXT>
+      </PIN10>
+      <PIN11>
+        <NAME>[dW:RESET:OC1BX:ADC10:PCINT15:PB7]</NAME>
+        <TEXT>dW (debugWIRE I/O). RESET (Active Low Reset pin). OC1BX (Output Compare and PWM Output B-X for Timer/Counter1). ADC10 (ADC Input Channel 10). PCINT15 (Pin Change Interrupt 15). PORTB7.</TEXT>
+      </PIN11>
+      <PIN12>
+        <NAME>[INT0:OC1AX:ADC9:PCINT14:PB6]</NAME>
+        <TEXT>INT0 (External Interrupt0 Input). OC1AX (Output Compare and PWM Output A-X for Timer/Counter1). ADC9 (ADC Input Channel 9). PCINT14 (Pin Change Interrupt 14). PORTB6.</TEXT>
+      </PIN12>
+      <PIN13>
+        <NAME>[CLKO:XTAL2:OC1BW:ADC8:PCINT13:PB5]</NAME>
+        <TEXT>CLKO (System clock output). XTAL2 (Chip clock Oscillator pin 2). OC1BW (Output Compare and PWM Output B-W for Timer/Counter1). ADC8 (ADC Input Channel 8). PCINT13 (Pin Change Interrupt 13). PORTB5.</TEXT>
+      </PIN13>
+      <PIN14>
+        <NAME>[CLKI:XTAL1:OC1AW:PCINT12:PB4]</NAME>
+        <TEXT>CLKI (External clock input). XTAL1 (Chip clock Oscillator pin 1). OC1AW (Output Compare and PWM Output A-W for Timer/Counter1). PCINT12 (Pin Change Interrupt 12). PORTB4.</TEXT>
+      </PIN14>
+      <PIN15>
+        <NAME>[VCC]</NAME>
+        <TEXT>Supply Voltage.</TEXT>
+      </PIN15>
+      <PIN16>
+        <NAME>[GND]</NAME>
+        <TEXT>Ground.</TEXT>
+      </PIN16>
+      <PIN17>
+        <NAME>[OC1BV:PCINT11:PB3]</NAME>
+        <TEXT>OC1BV (Output Compare and PWM Output B-V for Timer/Counter1). PCINT11 (Pin Change Interrupt 11). PORTB3.</TEXT>
+      </PIN17>
+      <PIN18>
+        <NAME>[SCL:USCK:OC1AV:PCINT10:PB2]</NAME>
+        <TEXT>SCL (Two-wire Mode USI Default Clock Input). USCK (Three-wire Mode USI Default Clock Input). OC1AV (Output Compare and PWM Output A-V for Timer/Counter1). PCINT10 (Pin Change Interrupt 10). PORTB2.</TEXT>
+      </PIN18>
+      <PIN19>
+        <NAME>[DO:OC1BU:PCINT9:PB1]</NAME>
+        <TEXT>DO (Three-wire Mode USI Default Data Output). OC1BU (Output Compare and PWM Output B-U for Timer/Counter1). PCINT9 (Pin Change Interrupt 9). PORTB1.</TEXT>
+      </PIN19>
+      <PIN20>
+        <NAME>[SDA:DI:OC1AU:PCINT8:PB0]</NAME>
+        <TEXT>SDA (Two-wire Mode USI Default Data Input / Output). DI (Three-wire Mode USI Default Data Input). OC1AU (Output Compare and PWM Output A-U for Timer/Counter1). PCINT8 (Pin Change Interrupt 8). PORTB0.</TEXT>
+      </PIN20>
+    </PDIP>
+  </PACKAGE>
+  <PROGRAMMING>
+    <ISPInterface>
+      <FuseProgMask>0xff,0xdf</FuseProgMask>
+      <FuseWarning>1,0x20,0x20,WARNING! These fuse settings will disable the ISP interface!</FuseWarning>
+      <FuseWarning>1,0x40,0x00,WARNING! Enabling the debugWIRE interface will disable the ISP interface!</FuseWarning>
+      <FuseWarning>1,0x80,0x00,WARNING! Disabling external reset will make the ISP interface inaccessible!</FuseWarning>
+    </ISPInterface>
+    <HVInterface>
+      <FuseWarning>1,0x20,0x20,WARNING! These fuse settings will disable the ISP interface!</FuseWarning>
+      <FuseWarning>1,0x40,0x00,WARNING! Enabling the debugWIRE interface will disable the ISP interface!</FuseWarning>
+      <FuseWarning>1,0x80,0x00,WARNING! Disabling external reset will make the ISP interface inaccessible!</FuseWarning>
+    </HVInterface>
+    <PRGISP>  
+        <ZIF_NO>2</ZIF_NO>   
+    </PRGISP>
+    <PRGHV>
+        <ZIF_NO>5</ZIF_NO>   
+    </PRGHV>
+    <TYPE>1</TYPE> 
+    <SUBCLASS>4</SUBCLASS> 
+    <OscCal>
+      <OCEntry>0x00,8.0 MHz</OCEntry>
+    </OscCal>
+    <PROG_FLASH>16384</PROG_FLASH>
+    <EEPROM>512</EEPROM>
+    <FlashPageSize>128</FlashPageSize>
+    <EepromPageSize>4</EepromPageSize>
+    <WD_Flash>9</WD_Flash>
+    <WD_EEPROM>15</WD_EEPROM>
+    <WD_ERASE>50</WD_ERASE>
+    <WD_FUSE>9</WD_FUSE>
+    <WD_LOCK>9</WD_LOCK>
+    <WD_RESET>100</WD_RESET> 
+    <FuseRCMD0>0x50000000</FuseRCMD0>    
+    <FuseRCMD1>0x58080000</FuseRCMD1>    
+    <FuseRCMD2>0x50080000</FuseRCMD2>    
+    <FuseRPos>3</FuseRPos>    
+    <FuseWCMD0>0xaca00000</FuseWCMD0>    
+    <FuseWCMD1>0xaca80000</FuseWCMD1>    
+    <FuseWCMD2>0xaca40000</FuseWCMD2>    
+    <FuseWPos>3</FuseWPos>    
+    <LockRCMD>0x58000000</LockRCMD>    
+    <LockRPos>3</LockRPos>    
+    <LockWCMD>0xace00000</LockWCMD>    
+    <LockWPos>3</LockWPos>  
+    <fusevalue>0xfedf62</fusevalue>  
+    <FuseMask>0x1dfff</FuseMask>          
+  </PROGRAMMING>
+</AVRPART>

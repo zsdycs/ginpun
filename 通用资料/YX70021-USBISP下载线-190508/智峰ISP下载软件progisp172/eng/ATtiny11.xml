@@ -1,0 +1,129 @@
+<AVRPART>	
+  <ADMIN>
+    <PART_NAME>ATtiny11</PART_NAME>
+    <SPEED>16MHZ</SPEED>
+    <SIGNATURE>
+      <ADDR000>0x1E</ADDR000>
+      <ADDR001>0x90</ADDR001>
+      <ADDR002>0x04</ADDR002>
+    </SIGNATURE>   
+  </ADMIN>
+  <PROGRAMMING>
+    <PRGISP>  
+        <ZIF_NO>2</ZIF_NO>   
+    </PRGISP>
+    <PRGHV>
+        <ZIF_NO>5</ZIF_NO>   
+    </PRGHV>
+    <TYPE>1</TYPE> 
+    <SUBCLASS>4</SUBCLASS> 
+    <PROG_FLASH>1024</PROG_FLASH>
+    <FlashPageSize>0</FlashPageSize>
+    <WD_Flash>9</WD_Flash>
+    <WD_EEPROM>15</WD_EEPROM>
+    <WD_ERASE>50</WD_ERASE>
+    <WD_FUSE>9</WD_FUSE>
+    <WD_LOCK>9</WD_LOCK>
+    <WD_RESET>100</WD_RESET> 
+    <FuseRCMD0>0x58000000</FuseRCMD0>       
+    <FuseRPos>3</FuseRPos>    
+    <FuseWCMD0>0xac000000</FuseWCMD0>      
+    <FuseWPos>1</FuseWPos>    
+    <LockRCMD>0x58000000</LockRCMD>    
+    <LockRPos>3</LockRPos>    
+    <LockWCMD>0xac000000</LockWCMD>    
+    <LockWPos>3</LockWPos>  
+    <fusevalue>0xff</fusevalue>  
+    <FuseMask>0xff</FuseMask>        
+  </PROGRAMMING>
+	<FUSE>
+		<LIST>[LOW]</LIST>
+		<ICON/>
+		<ID/>
+		<TEXT/>
+		<LOW>
+			<NMB_TEXT>7</NMB_TEXT>
+			<NMB_FUSE_BITS>5</NMB_FUSE_BITS>
+			<TEXT1>
+				<MASK>0x10</MASK>
+				<VALUE>0x00</VALUE>
+				<TEXT>Short start-up time selected</TEXT>
+			</TEXT1>
+			<TEXT2>
+				<MASK>0x08</MASK>
+				<VALUE>0x00</VALUE>
+				<TEXT>External reset function of PB5 disabled</TEXT>
+			</TEXT2>
+			<TEXT3>
+				<MASK>0x07</MASK>
+				<VALUE>0x07</VALUE>
+				<TEXT>CKSEL=111 External Crystal / Ceramic Resonator</TEXT>
+			</TEXT3>
+			<TEXT4>
+				<MASK>0x07</MASK>
+				<VALUE>0x06</VALUE>
+				<TEXT>CKSEL=110 External Low-frequency Crystal</TEXT>
+			</TEXT4>
+			<TEXT5>
+				<MASK>0x07</MASK>
+				<VALUE>0x05</VALUE>
+				<TEXT>CKSEL=101 External RC Oscillator</TEXT>
+			</TEXT5>
+			<TEXT6>
+				<MASK>0x07</MASK>
+				<VALUE>0x04</VALUE>
+				<TEXT>CKSEL=100 Internal RC Oscillator</TEXT>
+			</TEXT6>
+			<TEXT7>
+				<MASK>0x07</MASK>
+				<VALUE>0x00</VALUE>
+				<TEXT>CKSEL=000 External Clock</TEXT>
+			</TEXT7>
+			<FUSE0>
+				<NAME>CKSEL0</NAME>
+			</FUSE0>
+			<FUSE1>
+				<NAME>CKSEL1</NAME>
+			</FUSE1>						
+			<FUSE2>
+				<NAME>CKSEL2</NAME>
+			</FUSE2>
+			<FUSE3>
+				<NAME>RSTDISBL</NAME>
+			</FUSE3>						
+			<FUSE4>
+				<NAME>FSTRT</NAME>
+			</FUSE4>
+		</LOW>
+	</FUSE>
+	<LOCKBIT>
+		<ICON/>
+		<ID/>
+		<TEXT>[LB1 = 1 :  LB2 = 1] No memory lock features enabled. [LB1 = 0 :  LB2 = 1] Further programming of Flash and EEPROM is enabled. [LB1 = 0 :  LB2 = 0] Same as previous, but verify is also disabled</TEXT>
+		<NMB_TEXT>3</NMB_TEXT>
+		<NMB_LOCK_BITS>2</NMB_LOCK_BITS>
+		<TEXT1>
+			<MASK>0x06</MASK>
+			<VALUE>0x06</VALUE>
+			<TEXT>Mode 1: No memory lock features enabled</TEXT>
+		</TEXT1>
+		<TEXT2>
+			<MASK>0x06</MASK>
+			<VALUE>0x04</VALUE>
+			<TEXT>Mode 2: Further programming disabled</TEXT>
+		</TEXT2>
+		<TEXT3>
+			<MASK>0x06</MASK>
+			<VALUE>0x00</VALUE>
+			<TEXT>Mode 3: Further programming and verification disabled</TEXT>
+		</TEXT3>
+		<LOCKBIT1>
+			<NAME>LB1</NAME>
+			<TEXT>Lockbit</TEXT>
+		</LOCKBIT1>
+		<LOCKBIT2>
+			<NAME>LB2</NAME>
+			<TEXT>Lockbit</TEXT>
+		</LOCKBIT2>
+	</LOCKBIT>
+</AVRPART>

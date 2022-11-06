@@ -1,0 +1,113 @@
+<AVRPART>
+  <ADMIN>
+    <PART_NAME>ATtiny10</PART_NAME>
+    <SPEED>16MHZ</SPEED>
+    <BUILD>1</BUILD>
+    <RELEASE_STATUS>RELEASED</RELEASE_STATUS>
+    <SIGNATURE>
+      <ADDR000>$1E</ADDR000>
+      <ADDR001>$90</ADDR001>
+      <ADDR002>$03</ADDR002>
+    </SIGNATURE>
+  </ADMIN>
+  <FUSE>
+    <LIST>[BYTE0]</LIST>
+    <ICON/>
+    <ID/>
+    <TEXT/>
+    <LOW>
+      <NMB_FUSE_BITS>3</NMB_FUSE_BITS>
+      <FUSE2>
+        <NAME>CKOUT</NAME>
+        <TEXT>Output external clock</TEXT>
+        <DEFAULT>0</DEFAULT>
+      </FUSE2>
+      <FUSE1>
+        <NAME>WDTON</NAME>
+        <TEXT>Watch dog timer always on</TEXT>
+        <DEFAULT>1</DEFAULT>
+      </FUSE1>
+      <FUSE0>
+        <NAME>RSTDISBL</NAME>
+        <TEXT>Disable external reset</TEXT>
+        <DEFAULT>0</DEFAULT>
+      </FUSE0>
+      <NMB_TEXT>3</NMB_TEXT>
+      <TEXT1>
+        <MASK>0x04</MASK>
+        <VALUE>0x00</VALUE>
+        <TEXT>Output external clock</TEXT>
+      </TEXT1>
+      <TEXT2>
+        <MASK>0x02</MASK>
+        <VALUE>0x00</VALUE>
+        <TEXT>Watch dog timer always on</TEXT>
+      </TEXT2>
+      <TEXT3>
+        <MASK>0x01</MASK>
+        <VALUE>0x00</VALUE>
+        <TEXT>Disable external reset</TEXT>
+      </TEXT3>
+    </LOW>
+  </FUSE>
+  <LOCKBIT>
+    <ICON/>
+    <ID/>
+    <TEXT>[LB1 = 1 :  LB2 = 1] No memory lock features enabled. [LB1 = 0 :  LB2 = 1] Further programming of Flash and EEPROM is enabled. [LB1 = 0 :  LB2 = 0] Same as previous, but verify is also disabled</TEXT>
+    <NMB_TEXT>3</NMB_TEXT>
+    <NMB_LOCK_BITS>2</NMB_LOCK_BITS>
+    <TEXT1>
+      <MASK>0x03</MASK>
+      <VALUE>0x03</VALUE>
+      <TEXT>Mode 1: No memory lock features enabled</TEXT>
+    </TEXT1>
+    <TEXT2>
+      <MASK>0x03</MASK>
+      <VALUE>0x02</VALUE>
+      <TEXT>Mode 2: Further programming disabled</TEXT>
+    </TEXT2>
+    <TEXT3>
+      <MASK>0x03</MASK>
+      <VALUE>0x00</VALUE>
+      <TEXT>Mode 3: Further programming and verification disabled</TEXT>
+    </TEXT3>
+    <LOCKBIT0>
+      <NAME>LB1</NAME>
+      <TEXT>Lockbit</TEXT>
+    </LOCKBIT0>
+    <LOCKBIT1>
+      <NAME>LB2</NAME>
+      <TEXT>Lockbit</TEXT>
+    </LOCKBIT1>
+  </LOCKBIT>
+  <PROGRAMMING>
+    <PRGISP>  
+        <ZIF_NO>2</ZIF_NO>   
+    </PRGISP>
+    <PRGHV>
+        <ZIF_NO>5</ZIF_NO>   
+    </PRGHV>
+    <TYPE>1</TYPE> 
+    <SUBCLASS>4</SUBCLASS> 
+    <PROG_FLASH>1024</PROG_FLASH>
+    <EEPROM>0</EEPROM>    
+    <FlashPageSize>128</FlashPageSize>
+    <EepromPageSize>0</EepromPageSize>
+    <WD_Flash>9</WD_Flash>
+    <WD_EEPROM>15</WD_EEPROM>
+    <WD_ERASE>50</WD_ERASE>
+    <WD_FUSE>9</WD_FUSE>
+    <WD_LOCK>9</WD_LOCK>
+    <WD_RESET>100</WD_RESET> 
+    <FuseRCMD0>0x50000000</FuseRCMD0>    
+    <FuseRPos>3</FuseRPos>    
+    <FuseWCMD0>0xac000000</FuseWCMD0>     
+    <FuseWPos>3</FuseWPos>    
+    <LockRCMD>0x58000000</LockRCMD>    
+    <LockRPos>3</LockRPos>    
+    <LockWCMD>0xac000000</LockWCMD>    
+    <LockWPos>1</LockWPos>  
+    <fusevalue>0x52</fusevalue>  
+    <FuseMask>0xff</FuseMask>        
+  </PROGRAMMING>
+</AVRPART>

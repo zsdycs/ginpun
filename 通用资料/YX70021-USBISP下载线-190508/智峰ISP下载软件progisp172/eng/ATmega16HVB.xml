@@ -1,0 +1,320 @@
+<AVRPART>
+  <LOCKBIT>
+    <ICON/>
+    <ID/>
+    <TEXT>[LB1 = 1 :  LB2 = 1] No memory lock features enabled. [LB1 = 0 :  LB2 = 1] Further programming of Flash and EEPROM is enabled. [LB1 = 0 :  LB2 = 0] Same as previous, but verify is also disabled</TEXT>
+    <NMB_LOCK_BITS>6</NMB_LOCK_BITS>
+    <NMB_TEXT>11</NMB_TEXT>
+    <TEXT1>
+      <MASK>0x03</MASK>
+      <VALUE>0x03</VALUE>
+      <TEXT>Mode 1: No memory lock features enabled</TEXT>
+    </TEXT1>
+    <TEXT2>
+      <MASK>0x03</MASK>
+      <VALUE>0x02</VALUE>
+      <TEXT>Mode 2: Further programming disabled</TEXT>
+    </TEXT2>
+    <TEXT3>
+      <MASK>0x03</MASK>
+      <VALUE>0x00</VALUE>
+      <TEXT>Mode 3: Further programming and verification disabled</TEXT>
+    </TEXT3>
+    <TEXT4>
+      <MASK>0x0C</MASK>
+      <VALUE>0x0C</VALUE>
+      <TEXT>Application Protection Mode 1: No lock on SPM and LPM in Application Section</TEXT>
+    </TEXT4>
+    <TEXT5>
+      <MASK>0x0C</MASK>
+      <VALUE>0x08</VALUE>
+      <TEXT>Application Protection Mode 2: SPM prohibited in Application Section</TEXT>
+    </TEXT5>
+    <TEXT6>
+      <MASK>0x0C</MASK>
+      <VALUE>0x00</VALUE>
+      <TEXT>Application Protection Mode 3: LPM and SPM prohibited in Application Section</TEXT>
+    </TEXT6>
+    <TEXT7>
+      <MASK>0x0C</MASK>
+      <VALUE>0x04</VALUE>
+      <TEXT>Application Protection Mode 4: LPM prohibited in Application Section</TEXT>
+    </TEXT7>
+    <TEXT8>
+      <MASK>0x30</MASK>
+      <VALUE>0x30</VALUE>
+      <TEXT>Boot Loader Protection Mode 1: No lock on SPM and LPM in Boot Loader Section</TEXT>
+    </TEXT8>
+    <TEXT9>
+      <MASK>0x30</MASK>
+      <VALUE>0x20</VALUE>
+      <TEXT>Boot Loader Protection Mode 2: SPM prohibited in Boot Loader Section</TEXT>
+    </TEXT9>
+    <TEXT10>
+      <MASK>0x30</MASK>
+      <VALUE>0x00</VALUE>
+      <TEXT>Boot Loader Protection Mode 3: LPM and SPM prohibited in Boot Loader Section</TEXT>
+    </TEXT10>
+    <TEXT11>
+      <MASK>0x30</MASK>
+      <VALUE>0x10</VALUE>
+      <TEXT>Boot Loader Protection Mode 4: LPM prohibited in Boot Loader Section</TEXT>
+    </TEXT11>
+    <LOCKBIT0>
+      <NAME>LB1</NAME>
+      <TEXT>Lock bit</TEXT>
+    </LOCKBIT0>
+    <LOCKBIT1>
+      <NAME>LB2</NAME>
+      <TEXT>Lock bit</TEXT>
+    </LOCKBIT1>
+    <LOCKBIT2>
+      <NAME>BLB01</NAME>
+      <TEXT>Boot Lock bit</TEXT>
+    </LOCKBIT2>
+    <LOCKBIT3>
+      <NAME>BLB02</NAME>
+      <TEXT>Boot Lock bit</TEXT>
+    </LOCKBIT3>
+    <LOCKBIT4>
+      <NAME>BLB11</NAME>
+      <TEXT>Boot lock bit</TEXT>
+    </LOCKBIT4>
+    <LOCKBIT5>
+      <NAME>BLB12</NAME>
+      <TEXT>Boot lock bit</TEXT>
+    </LOCKBIT5>
+  </LOCKBIT>
+  <FUSE>
+    <LIST>[LOW:HIGH]</LIST>
+    <ID/>
+    <ICON/>
+    <TEXT/>
+    <LOW>
+      <NMB_FUSE_BITS>8</NMB_FUSE_BITS>
+      <FUSE7>
+        <NAME>WDTON</NAME>
+        <TEXT>Watchdog Timer Always On</TEXT>
+        <DEFAULT>1</DEFAULT>
+      </FUSE7>
+      <FUSE6>
+        <NAME>EESAVE</NAME>
+        <TEXT>EEPROM memory is preserved through chip erase</TEXT>
+        <DEFAULT>1</DEFAULT>
+      </FUSE6>
+      <FUSE5>
+        <NAME>SPIEN</NAME>
+        <TEXT>Enable Serial programming and Data Downloading</TEXT>
+        <DEFAULT>0</DEFAULT>
+      </FUSE5>
+      <FUSE4>
+        <NAME>SUT2</NAME>
+        <TEXT>Select start-up time</TEXT>
+        <DEFAULT>1</DEFAULT>
+      </FUSE4>
+      <FUSE3>
+        <NAME>SUT1</NAME>
+        <TEXT>Select start-up time</TEXT>
+        <DEFAULT>1</DEFAULT>
+      </FUSE3>
+      <FUSE2>
+        <NAME>SUT0</NAME>
+        <TEXT>Select start-up time</TEXT>
+        <DEFAULT>1</DEFAULT>
+      </FUSE2>
+      <FUSE1>
+        <NAME>OSCSEL1</NAME>
+        <TEXT>Oscillator Select</TEXT>
+        <DEFAULT>1</DEFAULT>
+      </FUSE1>
+      <FUSE0>
+        <NAME>OSCSEL0</NAME>
+        <TEXT>Oscillator Select</TEXT>
+        <DEFAULT>0</DEFAULT>
+      </FUSE0>
+      <NMB_TEXT>11</NMB_TEXT>
+      <TEXT1>
+        <MASK>0x80</MASK>
+        <VALUE>0x00</VALUE>
+        <TEXT>Watch-dog Timer always on; [WDTON=0]</TEXT>
+      </TEXT1>
+      <TEXT2>
+        <MASK>0x40</MASK>
+        <VALUE>0x00</VALUE>
+        <TEXT>Preserve EEPROM memory through the Chip Erase cycle; [EESAVE=0]</TEXT>
+      </TEXT2>
+      <TEXT3>
+        <MASK>0x20</MASK>
+        <VALUE>0x00</VALUE>
+        <TEXT>Serial program downloading (SPI) enabled; [SPIEN=0]</TEXT>
+      </TEXT3>
+      <TEXT4>
+        <MASK>0x01C</MASK>
+        <VALUE>0x00</VALUE>
+        <TEXT>Start-up time 14 CK + 4 ms;   [SUT=000]</TEXT>
+      </TEXT4>
+      <TEXT5>
+        <MASK>0x01C</MASK>
+        <VALUE>0x01</VALUE>
+        <TEXT>Start-up time 14 CK + 8 ms;   [SUT=001]</TEXT>
+      </TEXT5>
+      <TEXT6>
+        <MASK>0x01C</MASK>
+        <VALUE>0x02</VALUE>
+        <TEXT>Start-up time 14 CK + 16 ms;  [SUT=010]</TEXT>
+      </TEXT6>
+      <TEXT7>
+        <MASK>0x01C</MASK>
+        <VALUE>0x03</VALUE>
+        <TEXT>Start-up time 14 CK + 32 ms;  [SUT=011]</TEXT>
+      </TEXT7>
+      <TEXT8>
+        <MASK>0x01C</MASK>
+        <VALUE>0x04</VALUE>
+        <TEXT>Start-up time 14 CK + 64 ms;  [SUT=100]</TEXT>
+      </TEXT8>
+      <TEXT9>
+        <MASK>0x01C</MASK>
+        <VALUE>0x05</VALUE>
+        <TEXT>Start-up time 14 CK + 128 ms; [SUT=101]</TEXT>
+      </TEXT9>
+      <TEXT10>
+        <MASK>0x01C</MASK>
+        <VALUE>0x06</VALUE>
+        <TEXT>Start-up time 14 CK + 256 ms; [SUT=110]</TEXT>
+      </TEXT10>
+      <TEXT11>
+        <MASK>0x1C</MASK>
+        <VALUE>0x07</VALUE>
+        <TEXT>Start-up time 14 CK + 512 ms; [SUT=111]; default value</TEXT>
+      </TEXT11>
+    </LOW>
+    <HIGH>
+      <NMB_FUSE_BITS>5</NMB_FUSE_BITS>
+      <FUSE4>
+        <NAME>DUVRDINIT</NAME>
+        <TEXT>Reset Value of DUVRDRegister</TEXT>
+        <DEFAULT>0</DEFAULT>
+      </FUSE4>
+      <FUSE3>
+        <NAME>DWEN</NAME>
+        <TEXT>Enable debugWire</TEXT>
+        <DEFAULT>1</DEFAULT>
+      </FUSE3>
+      <FUSE2>
+        <NAME>BOOTSZ1</NAME>
+        <TEXT>Select Boot Size</TEXT>
+        <DEFAULT>0</DEFAULT>
+      </FUSE2>
+      <FUSE1>
+        <NAME>BOOTSZ0</NAME>
+        <TEXT>Select Boot Size</TEXT>
+        <DEFAULT>0</DEFAULT>
+      </FUSE1>
+      <FUSE0>
+        <NAME>BOOTRST</NAME>
+        <TEXT>Select Reset Vector</TEXT>
+        <DEFAULT>1</DEFAULT>
+      </FUSE0>
+      <NMB_TEXT>7</NMB_TEXT>
+      <TEXT1>
+        <MASK>0x10</MASK>
+        <VALUE>0x00</VALUE>
+        <TEXT>DUVR mode on; [DUVR=0]</TEXT>
+      </TEXT1>
+      <TEXT2>
+        <MASK>0x08</MASK>
+        <VALUE>0x00</VALUE>
+        <TEXT>Debug Wire enable; [DWEN=0]</TEXT>
+      </TEXT2>
+      <TEXT3>
+        <MASK>0x06</MASK>
+        <VALUE>0x06</VALUE>
+        <TEXT>Boot Flash section size=256 words Boot start address=$3F00; [BOOTSZ=11]</TEXT>
+      </TEXT3>
+      <TEXT4>
+        <MASK>0x06</MASK>
+        <VALUE>0x04</VALUE>
+        <TEXT>Boot Flash section size=512 words Boot start address=$3E00; [BOOTSZ=10]</TEXT>
+      </TEXT4>
+      <TEXT5>
+        <MASK>0x06</MASK>
+        <VALUE>0x02</VALUE>
+        <TEXT>Boot Flash section size=1024 words Boot start address=$3C00; [BOOTSZ=01]</TEXT>
+      </TEXT5>
+      <TEXT6>
+        <MASK>0x06</MASK>
+        <VALUE>0x00</VALUE>
+        <TEXT>Boot Flash section size=2048 words Boot start address=$3800; [BOOTSZ=00] ; default value</TEXT>
+      </TEXT6>
+      <TEXT7>
+        <MASK>0x01</MASK>
+        <VALUE>0x00</VALUE>
+        <TEXT>Boot Reset vector Enabled (default address=$0000); [BOOTRST=0]</TEXT>
+      </TEXT7>
+    </HIGH>
+  </FUSE>
+  <PROGRAMMING>
+    <ISPInterface>
+      <FuseReadMask>0xff,0xdf</FuseReadMask>
+      <FuseProgMask>0xff,0xdf</FuseProgMask>
+      <FuseWarning>0,0x20,0x20,WARNING! These fuse settings will disable the ISP interface!</FuseWarning>
+      <FuseWarning>1,0x08,0x00,WARNING! Enabling DEBUGWIRE will make the ISP interface inaccessible!</FuseWarning>
+    </ISPInterface>
+    <HVInterface>
+      <FuseWarning>0,0x20,0x20,WARNING! These fuse settings will disable the ISP interface!</FuseWarning>
+      <FuseWarning>1,0x08,0x00,WARNING! Enabling DEBUGWIRE will make the ISP interface inaccessible!</FuseWarning>
+    </HVInterface>
+    <PRGISP>  
+        <ZIF_NO>2</ZIF_NO>   
+    </PRGISP>
+    <PRGHV>
+        <ZIF_NO>5</ZIF_NO>   
+    </PRGHV>
+    <TYPE>1</TYPE> 
+    <SUBCLASS>4</SUBCLASS> 
+    <OscCal>
+      <OCEntry>0x00,8.0 MHz</OCEntry>
+    </OscCal>
+    <PROG_FLASH>16384</PROG_FLASH>
+    <EEPROM>512</EEPROM>        
+    <FlashPageSize>128</FlashPageSize>
+    <EepromPageSize>4</EepromPageSize>
+    <WD_Flash>9</WD_Flash>
+    <WD_EEPROM>15</WD_EEPROM>
+    <WD_ERASE>50</WD_ERASE>
+    <WD_FUSE>9</WD_FUSE>
+    <WD_LOCK>9</WD_LOCK>
+    <WD_RESET>100</WD_RESET> 
+    <FuseRCMD0>0x50000000</FuseRCMD0>    
+    <FuseRCMD1>0x58080000</FuseRCMD1>    
+    <FuseRPos>3</FuseRPos>    
+    <FuseWCMD0>0xaca00000</FuseWCMD0>    
+    <FuseWCMD1>0xaca80000</FuseWCMD1>    
+    <FuseWPos>3</FuseWPos>    
+    <LockRCMD>0x58000000</LockRCMD>    
+    <LockRPos>3</LockRPos>    
+    <LockWCMD>0xace00000</LockWCMD>    
+    <LockWPos>3</LockWPos>  
+    <fusevalue>0x99e1</fusevalue>  
+    <FuseMask>0xdfff</FuseMask>            
+  </PROGRAMMING>
+  <ADMIN>
+    <PART_NAME>ATmega16HVB</PART_NAME>
+    <SPEED>8MHZ</SPEED>
+    <BUILD>1</BUILD>
+    <RELEASE_STATUS>RELEASED</RELEASE_STATUS>
+    <SIGNATURE>
+      <ADDR000>$1E</ADDR000>
+      <ADDR001>$94</ADDR001>
+      <ADDR002>$0D</ADDR002>
+    </SIGNATURE>
+    <OCD_PARAMETERS>
+      <OCD_REVISION>1</OCD_REVISION>
+      <OCD_REGISTER_ADDRESS>0x31</OCD_REGISTER_ADDRESS>
+      <CACHE_TYPE>0</CACHE_TYPE>
+      <USE_JTAGID>0</USE_JTAGID>
+      <DW_BASE_PC>0x00</DW_BASE_PC>
+    </OCD_PARAMETERS>
+  </ADMIN>
+</AVRPART>
