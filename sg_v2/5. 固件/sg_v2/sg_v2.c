@@ -102,12 +102,12 @@ void rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
         // KC_DEL
         RGB_MATRIX_INDICATOR_SET_COLOR(47, 66, 66, 66);
 
-        // EE_CLR
-        RGB_MATRIX_INDICATOR_SET_COLOR(34, 66, 66, 66);
-        // EE_CLR
-        RGB_MATRIX_INDICATOR_SET_COLOR(34, 66, 66, 66);
         // UP
         RGB_MATRIX_INDICATOR_SET_COLOR(35, 66, 66, 66);
+        // EE_CLR
+        RGB_MATRIX_INDICATOR_SET_COLOR(38, 66, 66, 66);
+        // EE_CLR
+        RGB_MATRIX_INDICATOR_SET_COLOR(39, 66, 66, 66);
         // HOME
         RGB_MATRIX_INDICATOR_SET_COLOR(42, 66, 66, 66);
         // END
@@ -116,9 +116,9 @@ void rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
         RGB_MATRIX_INDICATOR_SET_COLOR(44, 66, 66, 66);
         // PGDN
         RGB_MATRIX_INDICATOR_SET_COLOR(45, 66, 66, 66);
+        // PrtSc
+        RGB_MATRIX_INDICATOR_SET_COLOR(46, 66, 66, 66);
 
-        // PowD
-        RGB_MATRIX_INDICATOR_SET_COLOR(32, 66, 66, 66);
         // LEFT
         RGB_MATRIX_INDICATOR_SET_COLOR(31, 66, 66, 66);
         // DOWN
@@ -136,8 +136,12 @@ void rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
         // MPLY
         RGB_MATRIX_INDICATOR_SET_COLOR(20, 66, 66, 66);
         
+        // PowD
+        RGB_MATRIX_INDICATOR_SET_COLOR(7, 66, 66, 66);
         // SLEP
-        RGB_MATRIX_INDICATOR_SET_COLOR(4, 66, 66, 66);
+        RGB_MATRIX_INDICATOR_SET_COLOR(8, 66, 66, 66);
+        // WAKE
+        RGB_MATRIX_INDICATOR_SET_COLOR(9, 66, 66, 66);
         // BRIU
         RGB_MATRIX_INDICATOR_SET_COLOR(11, 66, 66, 66);
         // BRID
@@ -146,11 +150,6 @@ void rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
         RGB_MATRIX_INDICATOR_SET_COLOR(13, 66, 66, 66);
         // VOLD
         RGB_MATRIX_INDICATOR_SET_COLOR(14, 66, 66, 66);
-        // PrtSc
-        RGB_MATRIX_INDICATOR_SET_COLOR(19, 66, 66, 66);
-
-        // WAKE
-        RGB_MATRIX_INDICATOR_SET_COLOR(0, 66, 66, 66);
 
     }
 }
