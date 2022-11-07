@@ -5,7 +5,7 @@
     "author": "lipk"
   },
   [
-    "~\nEsc\n`",
+    "Esc\n~\n\n`",
     "!\nF1\n1",
     "@\nF2\n2",
     "#\nF3\n3",
@@ -27,13 +27,13 @@
     {
       "w": 1.5
     },
-    "Tab\nBOOT",
-    "Q\nEECLR",
+    "Tab",
+    "Q",
     "W\n↑",
     "E",
     "R",
-    "T",
-    "Y",
+    "T\nBOOT",
+    "Y\nEECLR",
     "U",
     "I",
     "O\nHome",
@@ -43,13 +43,13 @@
     {
       "w": 1.5
     },
-    "|\n\n\\"
+    "|\nPrtSc\n\\"
   ],
   [
     {
       "w": 1.75
     },
-    "Caps Lock\nPowD",
+    "Caps Lock",
     "A\n←",
     "S\n↓",
     "D\n→",
@@ -94,12 +94,12 @@
     {
       "w": 2.25
     },
-    "Shift\nSLEP",
+    "Shift",
     "Z",
     "X",
-    "C",
-    "V",
-    "B",
+    "C\nPowD",
+    "V\nSLEP",
+    "B\nWAKE",
     "N",
     "M\nBRIU",
     "<\nBRID\n,",
@@ -108,7 +108,7 @@
     {
       "w": 2.75
     },
-    "Shift\nPrtSc"
+    "Shift"
   ],
   [
     {
@@ -124,10 +124,10 @@
     },
     "Alt",
     {
-      "a": 5,
+      "a": 7,
       "w": 6.25
     },
-    "\nWAKE\n\n\n\n\n6.25U",
+    "6.25U",
     {
       "a": 4,
       "w": 1.25
