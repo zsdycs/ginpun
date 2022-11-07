@@ -73,39 +73,84 @@ void rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
         RGB_MATRIX_INDICATOR_SET_COLOR(32, 66, 66, 66);
     }
     if (get_highest_layer(layer_state) == 1) {
-        // TODO==============================================
-        // QK_BOOT
-        RGB_MATRIX_INDICATOR_SET_COLOR(33, 66, 66, 66);
-        // // EE_CLR
-        // RGB_MATRIX_INDICATOR_SET_COLOR(69, 66, 66, 66);
-        // // WAKE
-        // RGB_MATRIX_INDICATOR_SET_COLOR(4, 66, 66, 66);
-        // // SLEP
-        // RGB_MATRIX_INDICATOR_SET_COLOR(6, 66, 66, 66);
-        // // RGB TOG
-        // RGB_MATRIX_INDICATOR_SET_COLOR(47, 66, 66, 66);
-        // // RGB VAD
-        // RGB_MATRIX_INDICATOR_SET_COLOR(48, 66, 66, 66);
-        // // RGB VAI
-        // RGB_MATRIX_INDICATOR_SET_COLOR(49, 66, 66, 66);
-        // // RGB MOD
-        // RGB_MATRIX_INDICATOR_SET_COLOR(50, 66, 66, 66);
-        // // MPLY
-        // RGB_MATRIX_INDICATOR_SET_COLOR(83, 66, 66, 66);
-        // // MUTE
-        // RGB_MATRIX_INDICATOR_SET_COLOR(67, 66, 66, 66);
-        // // PrtSc
-        // RGB_MATRIX_INDICATOR_SET_COLOR(52, 66, 66, 66);
-        // // BRIU
-        // RGB_MATRIX_INDICATOR_SET_COLOR(34, 66, 66, 66);
-        // // VOLU
-        // RGB_MATRIX_INDICATOR_SET_COLOR(35, 66, 66, 66);
-        // // PowD
-        // RGB_MATRIX_INDICATOR_SET_COLOR(53, 66, 66, 66);
-        // // BRID
-        // RGB_MATRIX_INDICATOR_SET_COLOR(19, 66, 66, 66);
-        // // VOLD
-        // RGB_MATRIX_INDICATOR_SET_COLOR(20, 66, 66, 66);
+        // KC_GRV
+        RGB_MATRIX_INDICATOR_SET_COLOR(60, 66, 66, 66);
+        // KC_F1
+        RGB_MATRIX_INDICATOR_SET_COLOR(59, 66, 66, 66);
+        // KC_F2
+        RGB_MATRIX_INDICATOR_SET_COLOR(58, 66, 66, 66);
+        // KC_F3
+        RGB_MATRIX_INDICATOR_SET_COLOR(57, 66, 66, 66);
+        // KC_F4
+        RGB_MATRIX_INDICATOR_SET_COLOR(56, 66, 66, 66);
+        // KC_F5
+        RGB_MATRIX_INDICATOR_SET_COLOR(55, 66, 66, 66);
+        // KC_F6
+        RGB_MATRIX_INDICATOR_SET_COLOR(54, 66, 66, 66);
+        // KC_F7
+        RGB_MATRIX_INDICATOR_SET_COLOR(53, 66, 66, 66);
+        // KC_F8
+        RGB_MATRIX_INDICATOR_SET_COLOR(52, 66, 66, 66);
+        // KC_F9
+        RGB_MATRIX_INDICATOR_SET_COLOR(51, 66, 66, 66);
+        // KC_F10
+        RGB_MATRIX_INDICATOR_SET_COLOR(50, 66, 66, 66);
+        // KC_F11
+        RGB_MATRIX_INDICATOR_SET_COLOR(49, 66, 66, 66);
+        // KC_F12
+        RGB_MATRIX_INDICATOR_SET_COLOR(48, 66, 66, 66);
+        // KC_DEL
+        RGB_MATRIX_INDICATOR_SET_COLOR(47, 66, 66, 66);
+
+        // EE_CLR
+        RGB_MATRIX_INDICATOR_SET_COLOR(34, 66, 66, 66);
+        // EE_CLR
+        RGB_MATRIX_INDICATOR_SET_COLOR(34, 66, 66, 66);
+        // UP
+        RGB_MATRIX_INDICATOR_SET_COLOR(35, 66, 66, 66);
+        // HOME
+        RGB_MATRIX_INDICATOR_SET_COLOR(42, 66, 66, 66);
+        // END
+        RGB_MATRIX_INDICATOR_SET_COLOR(43, 66, 66, 66);
+        // PGUP
+        RGB_MATRIX_INDICATOR_SET_COLOR(44, 66, 66, 66);
+        // PGDN
+        RGB_MATRIX_INDICATOR_SET_COLOR(45, 66, 66, 66);
+
+        // PowD
+        RGB_MATRIX_INDICATOR_SET_COLOR(32, 66, 66, 66);
+        // LEFT
+        RGB_MATRIX_INDICATOR_SET_COLOR(31, 66, 66, 66);
+        // DOWN
+        RGB_MATRIX_INDICATOR_SET_COLOR(30, 66, 66, 66);
+        // RIGHT
+        RGB_MATRIX_INDICATOR_SET_COLOR(29, 66, 66, 66);
+        // RGB TOG
+        RGB_MATRIX_INDICATOR_SET_COLOR(24, 66, 66, 66);
+        // RGB VAD
+        RGB_MATRIX_INDICATOR_SET_COLOR(23, 66, 66, 66);
+        // RGB VAI
+        RGB_MATRIX_INDICATOR_SET_COLOR(22, 66, 66, 66);
+        // RGB MOD
+        RGB_MATRIX_INDICATOR_SET_COLOR(21, 66, 66, 66);
+        // MPLY
+        RGB_MATRIX_INDICATOR_SET_COLOR(20, 66, 66, 66);
+        
+        // SLEP
+        RGB_MATRIX_INDICATOR_SET_COLOR(4, 66, 66, 66);
+        // BRIU
+        RGB_MATRIX_INDICATOR_SET_COLOR(11, 66, 66, 66);
+        // BRID
+        RGB_MATRIX_INDICATOR_SET_COLOR(12, 66, 66, 66);
+        // VOLU
+        RGB_MATRIX_INDICATOR_SET_COLOR(13, 66, 66, 66);
+        // VOLD
+        RGB_MATRIX_INDICATOR_SET_COLOR(14, 66, 66, 66);
+        // PrtSc
+        RGB_MATRIX_INDICATOR_SET_COLOR(19, 66, 66, 66);
+
+        // WAKE
+        RGB_MATRIX_INDICATOR_SET_COLOR(0, 66, 66, 66);
 
     }
 }
