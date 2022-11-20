@@ -36,18 +36,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |-------||-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|
  * |   1   ||       | ----- |       |  UP   |       |       | BOOT  | EECLR |       |       | HOME  |  END  |  PGUP |  PGDN | PrtSc |
  * |-------||-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|
- * |   2   ||       | ----- |  LEFT | DOWN  | RIGHT |       |       |       |       |RGB TOG|RGB VAD|RGB VAI|RGB MOD| MPLY  | ----- |
+ * |   2   ||       | ----- |  LEFT | DOWN  | RIGHT |       |       |       |       |RGB TOG|RGB VAD|RGB VAI|RGB MOD| ----- | ----- |
  * |-------||-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|
- * |   3   || ----- |       |       |       | PowD  | SLEP  |  WAKE |       |  BRIU |  BRID | VOLU  |  VOLD | ----- |       | ----- |
+ * |   3   || ----- |       |       |       | PowD  | SLEP  |  WAKE |       |  BRID |  BRIU |  VOLD |  VOLU | ----- |       | ----- |
  * |-------||-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|
  * |   4   ||       |       | ----- |       | ----- | ----- |       | ----- | ----- | ----- |       |       | ----- |       |  FN   |
  * |-------||-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|
  */
  [1] = LAYOUT(
             KC_GRV,   KC_F1,   KC_F2,  KC_F3,  KC_F4,  KC_F5,  KC_F6,  KC_F7,  KC_F8,  KC_F9, KC_F10, KC_F11, KC_F12,         KC_DEL,
-             KC_NO,            KC_NO,  KC_UP,  KC_NO,  KC_NO,QK_BOOT, EE_CLR,  KC_NO,  KC_NO,KC_HOME, KC_END,KC_PGUP,KC_PGDN,KC_PSCR,
-             KC_NO,          KC_LEFT,KC_DOWN,KC_RGHT,  KC_NO,  KC_NO,  KC_NO,  KC_NO,RGB_TOG,RGB_VAD,RGB_VAI,RGB_MOD,KC_MPLY,
-                      KC_NO,   KC_NO,  KC_NO, KC_PWR,KC_SLEP,KC_WAKE,  KC_NO,KC_BRIU,KC_BRID,KC_VOLU,KC_VOLD,          KC_NO,
-             KC_NO,   KC_NO,           KC_NO,                  KC_NO,                          KC_NO,  KC_NO,          KC_NO,  TO(0)
+           _______,          _______,  KC_UP,_______,_______,QK_BOOT, EE_CLR,_______,_______,KC_HOME, KC_END,KC_PGUP,KC_PGDN,KC_PSCR,
+           _______,          KC_LEFT,KC_DOWN,KC_RGHT,_______,_______,_______,_______,RGB_TOG,RGB_VAD,RGB_VAI,RGB_MOD,_______,
+                    _______, _______,_______, KC_PWR,KC_SLEP,KC_WAKE,_______,KC_BRID,KC_BRIU,KC_VOLD,KC_VOLU,        _______,
+           _______, _______,         _______,                _______,                          TO(0),_______,        _______,  TO(0)
         ),
 };

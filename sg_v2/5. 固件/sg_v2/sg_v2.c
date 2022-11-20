@@ -133,9 +133,7 @@ void rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
         RGB_MATRIX_INDICATOR_SET_COLOR(22, 66, 66, 66);
         // RGB MOD
         RGB_MATRIX_INDICATOR_SET_COLOR(21, 66, 66, 66);
-        // MPLY
-        RGB_MATRIX_INDICATOR_SET_COLOR(20, 66, 66, 66);
-        
+
         // PowD
         RGB_MATRIX_INDICATOR_SET_COLOR(7, 66, 66, 66);
         // SLEP
