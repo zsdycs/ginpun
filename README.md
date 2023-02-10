@@ -19,7 +19,9 @@
 
 按键布局基于 system76 的 [launch](https://system76.com/accessories/launch) 键盘。由于特殊设计的按键配列，键帽非常难买到，键帽高度只能买到 XDA 的，可玩性不高。
 
-![KB84 成品图片](kb84/1.%20成品图片/KB84-7.jpg)
+![KB84 成品图片1](kb84/1.%20成品图片/KB84-7.jpg)
+
+![KB84 成品图片2](kb84/1.%20成品图片/KB84-6.jpg)
 
 ![KB84 配列展示](kb84/键盘设计文件/keyboard-Layer%200.jpg)
 
@@ -29,7 +31,9 @@
 
 主要特点是第 6 行，“空格”键居中，有一个 1.5U 的 “CTRL” 靠近 “Z”、“X”、“C”、“V”，方便使用快捷键，所以键帽购买时也是稍微需要注意的。
 
-![SG_V1 成品图片](sg_v1/1.%20成品图片/overhead-shot.jpg)
+![SG_V1 成品图片1](sg_v1/1.%20成品图片/overhead-shot.jpg)
+
+![SG_V1 成品图片2](sg_v1/1.%20成品图片/sg_v1%20(3).jpg)
 
 ![SG_V1 配列展示](sg_v1/键盘设计文件/SG84_V1.0_layout.jpg)
 
